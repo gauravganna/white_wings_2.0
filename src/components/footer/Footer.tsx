@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterContact } from './Contact';
+import { FooterLegal } from './Legal';
 import { FooterLinks } from './Links';
 import { FooterNewsletter, type NewsletterData } from './Newsletter';
 import { FooterRow } from './Row';
@@ -10,6 +11,7 @@ interface FooterData {
   social: { label: string; items: Array<{ id: string; label: string; href: string; icon: string }> };
   quickLinks: { label: string; items: Array<{ id: string; label: string; href: string }> };
   contact: { label: string; phone: { text: string; href: string }, email: { text: string; href: string } };
+  legal?: { copyright: string; links: Array<{ id: string; label: string; href: string }> };
 }
 
 interface FooterProps {
@@ -32,6 +34,9 @@ export const Footer: React.FC<FooterProps> = ({ data, onNewsletterSubscribe }) =
         <FooterRow label={data.contact.label}>
           <FooterContact phone={data.contact.phone} email={data.contact.email} />
         </FooterRow>
+
+        {/* Legal */}
+        {data.legal && <FooterLegal copyright={data.legal.copyright} links={data.legal.links} />}
       </div>
     </footer>
   );

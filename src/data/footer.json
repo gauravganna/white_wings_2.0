@@ -33,7 +33,7 @@
     "email": { "text": "mkt@whitewingsgroup.in", "href": "mailto:mkt@whitewingsgroup.in", "icon": "mail" }
   },
   "legal": {
-    "copyright": "© 2025 Chamomile Media. All rights reserved.",
+    "copyright": "© 2025 White Wings Group. All rights reserved.",
     "links": [
       { "id": "privacy", "label": "Privacy Policy", "href": "#" },
       { "id": "terms", "label": "Terms of Use", "href": "#" }

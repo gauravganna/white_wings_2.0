@@ -66,7 +66,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
       className={cn(
         'w-full bg-ww-gray-50',
         'border-t border-ww-gray-200',
-        'py-8 md:py-12',
+        'py-2 md:py-4',
         className
       )}
       aria-labelledby="newsletter-title"
