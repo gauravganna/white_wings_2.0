@@ -1,0 +1,33 @@
+{
+  "title": "Social Media",
+  "cta": { "label": "More", "href": "#" },
+  "items": [
+    {
+      "id": "s1",
+      "platform": "youtube",
+      "type": "video",
+      "title": "Torrance",
+      "subtitle": "Drone Video",
+      "thumbnail": "/src/assets/images/sample-image1.webp",
+      "url": "https://www.youtube.com/watch?v=loqRjunaQ84"
+    },
+    {
+      "id": "s2",
+      "platform": "instagram",
+      "type": "image",
+      "title": "Torrance",
+      "subtitle": "Drone Video",
+      "thumbnail": "/src/assets/images/sample-image1.webp",
+      "url": "https://www.instagram.com/reel/DO8CGn2CVLV"
+    },
+    {
+      "id": "s3",
+      "platform": "facebook",
+      "type": "link",
+      "title": "Torrance",
+      "subtitle": "Drone Video",
+      "thumbnail": "/src/assets/images/sample-thumb.jpg",
+      "url": "https://facebook.com/xxxxx"
+    }
+  ]
+}

@@ -20,7 +20,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ item }) => {
       <div className="flex items-center gap-4 p-6">
         <div className="h-12 w-12 rounded-full bg-ww-gray-200 overflow-hidden">
           {item.avatar && (
-            <img src={item.avatar} alt={item.name} className="h-full w-full object-cover" loading="lazy" />
+            <img src={item.avatar} alt={item.name} className="h-full w-full object-cover rounded-full" loading="lazy" />
           )}
         </div>
         <div>
