@@ -2,21 +2,41 @@
   "newsletter": {
     "title": "Residential Projects, Commercial Projects & Land Development",
     "description": "Subscribe to our newsletter for the latest updates on features and releases. By subscribing, you consent to our Privacy Policy and agree to receive updates.",
-    "input": {
-      "placeholder": "Email",
-      "ariaLabel": "Email address"
-    },
-    "cta": {
-      "label": "Subscribe",
-      "ariaLabel": "Subscribe to newsletter"
-    },
-    "success": {
-      "message": "You're subscribed!",
-      "ariaLive": "polite"
-    },
-    "errors": {
-      "required": "Email is required",
-      "invalid": "Please enter a valid email"
-    }
+    "input": { "placeholder": "Email", "ariaLabel": "Email address" },
+    "cta": { "label": "Subscribe", "ariaLabel": "Subscribe to newsletter" },
+    "success": { "message": "You're subscribed!", "ariaLive": "polite" },
+    "errors": { "required": "Email is required", "invalid": "Please enter a valid email" }
+  },
+  "social": {
+    "label": "Social Media",
+    "items": [
+      { "id": "facebook", "label": "Facebook", "href": "#", "icon": "facebook" },
+      { "id": "linktree", "label": "Linktree", "href": "#", "icon": "asterisk" },
+      { "id": "youtube", "label": "YouTube", "href": "#", "icon": "youtube" },
+      { "id": "instagram", "label": "Instagram", "href": "#", "icon": "instagram" },
+      { "id": "linkedin", "label": "LinkedIn", "href": "#", "icon": "linkedin" }
+    ]
+  },
+  "quickLinks": {
+    "label": "Quick Links",
+    "items": [
+      { "id": "home", "label": "Home Page", "href": "#" },
+      { "id": "services", "label": "Our Services", "href": "#" },
+      { "id": "contact", "label": "Contact Us", "href": "#" },
+      { "id": "testimonials", "label": "Testimonials", "href": "#" },
+      { "id": "blog", "label": "Blog Posts", "href": "#" }
+    ]
+  },
+  "contact": {
+    "label": "Connect With Us",
+    "phone": { "text": "+91 98240-99444", "href": "tel:+919824099444", "icon": "phone" },
+    "email": { "text": "mkt@whitewingsgroup.in", "href": "mailto:mkt@whitewingsgroup.in", "icon": "mail" }
+  },
+  "legal": {
+    "copyright": "© 2025 Chamomile Media. All rights reserved.",
+    "links": [
+      { "id": "privacy", "label": "Privacy Policy", "href": "#" },
+      { "id": "terms", "label": "Terms of Use", "href": "#" }
+    ]
   }
 }

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import React, { useEffect, useMemo, useState } from 'react';
+import { FooterRow } from './Row';
 
 export interface NewsletterData {
   title: string;
@@ -72,38 +73,20 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
       role="region"
     >
       <div className="container mx-auto px-4">
-        {/* Desktop: 3-column grid with dashed divider | Mobile: stacked */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_minmax(320px,420px)] items-center gap-6 lg:gap-0">
-          {/* Copy */}
-          <div>
-            <h2 id="newsletter-title" className="text-base md:text-lg font-semibold text-ww-gray-900 whitespace-nowrap overflow-hidden text-ellipsis">
-              {data.title}
-            </h2>
-            <p className="mt-2 text-ww-gray-600 text-sm md:text-base max-w-lg">
-              {data.description}
-            </p>
-          </div>
-
-          {/* Decorative dashed divider (desktop only) */}
-          <div 
-            className="hidden lg:flex justify-center items-center px-4" 
-            aria-hidden="true"
-          >
-            <div
-              className="bg-repeat-x"
-              style={{
-                width: '100%',
-                maxWidth: '400px',
-                margin: '0 10px',
-                height: '2px',
-                backgroundImage: `repeating-linear-gradient(to right, currentColor 0, currentColor 10px, transparent 10px, transparent 20px)`,
-                color: '#9ca3af'
-              }}
-            />
-          </div>
-
-          {/* Form */}
-          <form onSubmit={handleSubmit} noValidate className="w-full">
+        {/* Use FooterRow layout: left custom content | dashed | right form */}
+        <FooterRow
+          left={
+            <div>
+              <h2 id="newsletter-title" className="text-base md:text-lg font-semibold text-ww-gray-900 whitespace-nowrap overflow-hidden text-ellipsis">
+                {data.title}
+              </h2>
+              <p className="mt-2 text-ww-gray-600 text-sm md:text-base max-w-lg">
+                {data.description}
+              </p>
+            </div>
+          }
+        >
+          <form onSubmit={handleSubmit} noValidate className="w-full max-w-[420px]">
             <div className="flex items-center gap-3 h-11">
               <div className="relative flex-1 min-w-0 h-11">
                 <input
@@ -126,7 +109,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
 
                 {/* Error text */}
                 {!!error && (
-                  <p id="newsletter-error" role="alert" className="mt-2 text-sm text-red-600">
+                  <p id="newsletter-error" role="alert" className="mt-2 text-sm text-red-600 text-left">
                     {error}
                   </p>
                 )}
@@ -135,7 +118,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
                 <p
                   id="newsletter-success"
                   aria-live={data.success.ariaLive ?? 'polite'}
-                  className={cn('mt-2 text-sm text-green-600', isSuccess ? 'opacity-100' : 'opacity-0')}
+                  className={cn('mt-2 text-sm text-green-600 text-left', isSuccess ? 'opacity-100' : 'opacity-0')}
                 >
                   {data.success.message}
                 </p>
@@ -155,7 +138,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
               </Button>
             </div>
           </form>
-        </div>
+        </FooterRow>
       </div>
     </section>
   );
