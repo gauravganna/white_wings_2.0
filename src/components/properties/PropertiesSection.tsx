@@ -1,25 +1,22 @@
-import data from '@/data/social.json';
+import data from '@/data/properties.json';
 import React from 'react';
-import { SocialMediaCard } from './SocialMediaCard';
+import { PropertyCard } from './PropertyCard';
 
-export const SocialMediaSection: React.FC = () => {
+export const PropertiesSection: React.FC = () => {
   return (
-    <section aria-labelledby="social-title" className="bg-gradient-to-b from-white to-ww-gray-50">
+    <section aria-labelledby="properties-title" className="bg-gradient-to-b from-white to-ww-gray-50">
       <div className="container mx-auto px-4 py-8 md:py-12">
-        {/* Header - Desktop exact style */}
+        {/* Header - Desktop */}
         <div className="hidden md:flex items-center mb-6">
-          <h2 id="social-title" className="text-2xl md:text-3xl text-ww-gray-900 whitespace-nowrap">
+          <h2 id="properties-title" className="text-2xl md:text-3xl text-ww-gray-900 whitespace-nowrap">
             {data.title}
           </h2>
-          {/* main divider between title and CTA */}
           <div className="mx-4 h-[2px] bg-ww-blue-300 flex-1" />
-          {/* CTA */}
           {data.cta?.href && (
             <a href={data.cta.href} className="text-base text-ww-blue-700 hover:underline whitespace-nowrap">
               {data.cta.label}
             </a>
           )}
-          {/* trailing line + circle with dot */}
           <div className="ml-4 flex items-center gap-0 flex-shrink-0">
             <div className="h-[2px] w-28 bg-ww-gray-400" />
             <div className="ml-4 h-16 w-16 rounded-full border border-ww-gray-700 flex items-center justify-center">
@@ -38,19 +35,19 @@ export const SocialMediaSection: React.FC = () => {
           )}
         </div>
 
-        {/* Desktop Grid 3x4 feel - responsive, auto-fills to number of posts */}
-        <div className="hidden md:grid gap-6" style={{ gridTemplateColumns: 'repeat(4, minmax(0, 1fr))' }}>
-          {data.items.map((item) => (
-            <SocialMediaCard key={item.id} item={item} />
+        {/* Desktop vertical list (max 3 cards visible) */}
+        <div className="hidden md:flex flex-col gap-6">
+          {data.items.slice(0, 3).map((item) => (
+            <PropertyCard key={item.id} item={item as any} />
           ))}
         </div>
 
-        {/* Mobile Horizontal Scroll */}
-        <div className="md:hidden no-scrollbar overflow-x-auto" style={{ padding: '21px 24px' }}>
-          <div className="flex" style={{ gap: '10px' }}>
+        {/* Mobile horizontal scroll */}
+        <div className="md:hidden no-scrollbar overflow-x-auto" style={{ padding: '12px 16px' }}>
+          <div className="flex" style={{ gap: '12px' }}>
             {data.items.map((item) => (
-              <div key={item.id} className="shrink-0 w-[311px]">
-                <SocialMediaCard item={item} />
+              <div key={item.id} className="shrink-0 w-[280px]">
+                <PropertyCard item={item as any} />
               </div>
             ))}
           </div>
@@ -60,4 +57,4 @@ export const SocialMediaSection: React.FC = () => {
   );
 };
 
-export default SocialMediaSection;
+export default PropertiesSection;

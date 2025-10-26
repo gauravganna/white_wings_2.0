@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/layout';
+import { PropertiesSection } from '@/components/properties/PropertiesSection';
 import { SocialMediaSection } from '@/components/social/SocialMediaSection';
 import { Testimonials } from '@/components/testimonials/Testimonials';
 import footerData from '@/data/footer.json';
@@ -15,6 +16,7 @@ function App() {
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
       <main className="flex-1">
+        <PropertiesSection />
         <SocialMediaSection />
         <Testimonials />
       </main>

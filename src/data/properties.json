@@ -1,0 +1,36 @@
+{
+  "title": "Residential",
+  "cta": { "label": "More", "href": "#" },
+  "items": [
+    {
+      "id": "p1",
+      "name": "Torrance",
+      "address": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/majoris.png",
+      "brochureUrl": "#",
+      "contactUrl": "#"
+    },
+    {
+      "id": "p2",
+      "name": "Bella Casa",
+      "address": "Bellacasa, Althan Bhimrad, Bhimrad, Surat, Gujarat 395017",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/massimo.png",
+      "brochureUrl": "#",
+      "contactUrl": "#"
+    },
+    {
+      "id": "p3",
+      "name": "Flamingo",
+      "address": "Flamingo, Althan-Bharthana Road, Surat, Gujarat 395017",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/avatar1.png",
+      "brochureUrl": "#",
+      "contactUrl": "#"
+    }
+  ]
+}
