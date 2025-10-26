@@ -1,0 +1,5 @@
+# This file ensures the assets/images directory is tracked by git
+# Place your White Wings logo files here:
+# - logo-full.png/svg (full logo with text)
+# - logo-icon.png/svg (icon only)
+# - logo-white.png/svg (white version for dark backgrounds)

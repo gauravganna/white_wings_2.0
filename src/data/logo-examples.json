@@ -1,0 +1,46 @@
+{
+  "examples": {
+    "fullLogo": {
+      "image": {
+        "src": "/src/assets/images/white-wings-logo-full.png",
+        "alt": "White Wings Group - We Transform Space",
+        "width": 150,
+        "height": 50
+      },
+      "variant": "full"
+    },
+    "iconOnly": {
+      "image": {
+        "src": "/src/assets/images/white-wings-icon.png",
+        "alt": "White Wings Group",
+        "width": 40,
+        "height": 40
+      },
+      "variant": "icon"
+    },
+    "textWithIcon": {
+      "image": {
+        "src": "/src/assets/images/white-wings-icon.png",
+        "alt": "White Wings Group",
+        "width": 32,
+        "height": 32
+      },
+      "text": "WHITE WINGS",
+      "subtitle": "GROUP",
+      "tagline": "We Transform Space",
+      "variant": "full"
+    },
+    "textOnly": {
+      "text": "WHITE WINGS",
+      "subtitle": "GROUP",
+      "tagline": "We Transform Space",
+      "variant": "text"
+    },
+    "fallbackSquares": {
+      "text": "WHITE WINGS",
+      "subtitle": "GROUP",
+      "tagline": "We Transform Space",
+      "variant": "full"
+    }
+  }
+}

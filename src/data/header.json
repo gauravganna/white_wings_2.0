@@ -1,0 +1,49 @@
+{
+  "logo": {
+    "image": {
+      "src": "/src/assets/images/white-wings-logo.png",
+      "alt": "White Wings Group",
+      "width": 120,
+      "height": 40
+    },
+    "text": "",
+    "subtitle": "",
+    "tagline": "",
+    "variant": "full"
+  },
+  "navigation": {
+    "items": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "/",
+        "isActive": true
+      },
+      {
+        "id": "about",
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "id": "properties",
+        "label": "Properties",
+        "href": "/properties"
+      },
+      {
+        "id": "media",
+        "label": "Media",
+        "href": "/media"
+      },
+      {
+        "id": "contact",
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      {
+        "id": "career",
+        "label": "Career",
+        "href": "/career"
+      }
+    ]
+  }
+}
