@@ -1,0 +1,9 @@
+{
+  "title": "Projects",
+  "logos": [
+    { "src": "/src/assets/images/brands/brooklyn.png", "alt": "Brooklyn", "href": "#" },
+    { "src": "/src/assets/images/brands/orleans.png", "alt": "Orleans", "href": "#" },
+    { "src": "/src/assets/images/brands/ovalleaf.png", "alt": "Oval Leaf", "href": "#" },
+    { "src": "/src/assets/images/brands/massimo.png", "alt": "Massimo", "href": "#" }
+  ]
+}
