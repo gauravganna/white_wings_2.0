@@ -1,0 +1,9 @@
+{
+  "background": "/src/assets/images/placard.png",
+  "description": "With over 27 years of experience, White Wings Group has delivered 13+ residential, commercial, and land development projects across Surat. We are proud to have developed White Wings Torrance, the city’s first IGBC pre-certified Platinum Green Building, and ensure every project follows RERA guidelines for transparency. Modern construction methods, such as flat slab layouts, and a focus on quality and timely delivery have helped us earn the trust of thousands of happy customers.",
+  "stats": [
+    { "label": "Project Completed", "value": "11" },
+    { "label": "Happy Families", "value": "2022+" },
+    { "label": "Years Of Experience", "value": "27+" }
+  ]
+}

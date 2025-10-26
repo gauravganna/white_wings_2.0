@@ -1,3 +1,4 @@
+import { Placard } from '@/components/common/Placard';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/layout';
 import { PropertiesSection } from '@/components/properties/PropertiesSection';
@@ -16,6 +17,7 @@ function App() {
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
       <main className="flex-1">
+        <Placard />
         <PropertiesSection type="commercial" title="Commercial" />
         <PropertiesSection type="residential" title="Residential" />
         <SocialMediaSection />
