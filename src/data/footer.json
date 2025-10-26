@@ -1,0 +1,22 @@
+{
+  "newsletter": {
+    "title": "Residential Projects, Commercial Projects & Land Development",
+    "description": "Subscribe to our newsletter for the latest updates on features and releases. By subscribing, you consent to our Privacy Policy and agree to receive updates.",
+    "input": {
+      "placeholder": "Email",
+      "ariaLabel": "Email address"
+    },
+    "cta": {
+      "label": "Subscribe",
+      "ariaLabel": "Subscribe to newsletter"
+    },
+    "success": {
+      "message": "You're subscribed!",
+      "ariaLive": "polite"
+    },
+    "errors": {
+      "required": "Email is required",
+      "invalid": "Please enter a valid email"
+    }
+  }
+}
