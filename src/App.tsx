@@ -16,7 +16,8 @@ function App() {
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
       <main className="flex-1">
-        <PropertiesSection />
+        <PropertiesSection type="commercial" title="Commercial" />
+        <PropertiesSection type="residential" title="Residential" />
         <SocialMediaSection />
         <Testimonials />
       </main>

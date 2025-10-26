@@ -4,6 +4,7 @@
   "items": [
     {
       "id": "p1",
+      "type": "residential",
       "name": "Torrance",
       "address": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007",
       "phone": "+91 98240-99444",
@@ -14,6 +15,7 @@
     },
     {
       "id": "p2",
+      "type": "residential",
       "name": "Bella Casa",
       "address": "Bellacasa, Althan Bhimrad, Bhimrad, Surat, Gujarat 395017",
       "phone": "+91 98240-99444",
@@ -24,8 +26,31 @@
     },
     {
       "id": "p3",
+      "type": "residential",
       "name": "Flamingo",
       "address": "Flamingo, Althan-Bharthana Road, Surat, Gujarat 395017",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/avatar1.png",
+      "brochureUrl": "#",
+      "contactUrl": "#"
+    },
+    {
+      "id": "p4",
+      "type": "commercial",
+      "name": "White Wings Square",
+      "address": "VIP Road, Opp. XYZ Mall, Surat, Gujarat 395007",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/avatar1.png",
+      "brochureUrl": "#",
+      "contactUrl": "#"
+    },
+    {
+      "id": "p5",
+      "type": "commercial",
+      "name": "Business Park",
+      "address": "Ring Road, Surat, Gujarat 395002",
       "phone": "+91 98240-99444",
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/avatar1.png",
