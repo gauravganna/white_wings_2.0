@@ -21,7 +21,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ data, onNewsletterSubscribe }) => {
   return (
-    <footer role="contentinfo" className="mt-16">
+    <footer role="contentinfo" className="mt-2">
       <FooterNewsletter data={data.newsletter} onSubscribe={onNewsletterSubscribe} />
 
       <div className="container mx-auto px-4 mt-8">
