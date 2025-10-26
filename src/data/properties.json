@@ -11,7 +11,8 @@
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/majoris.png",
       "brochureUrl": "#",
-      "contactUrl": "#"
+      "contactUrl": "#",
+      "detailUrl": "/properties/torrance"
     },
     {
       "id": "p2",
@@ -22,7 +23,8 @@
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/massimo.png",
       "brochureUrl": "#",
-      "contactUrl": "#"
+      "contactUrl": "#",
+      "detailUrl": "/properties/bella-casa"
     },
     {
       "id": "p3",
@@ -33,7 +35,8 @@
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
-      "contactUrl": "#"
+      "contactUrl": "#",
+      "detailUrl": "/properties/flamingo"
     },
     {
       "id": "p4",
@@ -44,7 +47,8 @@
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
-      "contactUrl": "#"
+      "contactUrl": "#",
+      "detailUrl": "/properties/white-wings-square"
     },
     {
       "id": "p5",
@@ -55,7 +59,8 @@
       "image": "/src/assets/images/sample-image1.webp",
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
-      "contactUrl": "#"
+      "contactUrl": "#",
+      "detailUrl": "/properties/business-park"
     }
   ]
 }
