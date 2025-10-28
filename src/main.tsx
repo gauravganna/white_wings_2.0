@@ -1,3 +1,4 @@
+import NotFoundPage from '@/routes/NotFoundPage'
 import PhotoGalleryPage from '@/routes/PhotoGalleryPage'
 import PropertiesIndexPage from '@/routes/PropertiesIndexPage'
 import PropertyDetailPage from '@/routes/PropertyDetailPage'
@@ -10,7 +11,8 @@ const router = createBrowserRouter([
   { path: '/', element: <App /> },
   { path: '/photos', element: <PhotoGalleryPage /> },
   { path: '/properties', element: <PropertiesIndexPage /> },
-  { path: '/property/:slug', element: <PropertyDetailPage /> }
+  { path: '/property/:slug', element: <PropertyDetailPage /> },
+  { path: '*', element: <NotFoundPage /> }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

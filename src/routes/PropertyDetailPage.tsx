@@ -1,5 +1,7 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
+import footerData from '@/data/footer.json'
+import headerData from '@/data/header.json'
 import properties from '@/data/properties.json'
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -10,7 +12,7 @@ const PropertyDetailPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
-      <Header data={require('@/data/header.json')} />
+      <Header data={headerData} />
       <main className="flex-1 container mx-auto px-4 py-10">
         {!property ? (
           <p className="text-ww-gray-700">Property not found.</p>
@@ -34,7 +36,7 @@ const PropertyDetailPage: React.FC = () => {
           </article>
         )}
       </main>
-      <Footer data={require('@/data/footer.json')} onNewsletterSubscribe={async () => {}} />
+      <Footer data={footerData} onNewsletterSubscribe={async () => {}} />
     </div>
   )
 }

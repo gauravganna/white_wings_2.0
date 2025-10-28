@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ data, onNewsletterSubscribe }) =
     <footer role="contentinfo" className="mt-2">
       <FooterNewsletter data={data.newsletter} onSubscribe={onNewsletterSubscribe} />
 
-      <div className="container mx-auto px-4 mt-8">
+      <div className="container mx-auto px-4 mt-2">
         <FooterRow label={data.social.label}>
           <FooterSocial items={data.social.items} />
         </FooterRow>
