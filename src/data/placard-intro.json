@@ -1,0 +1,32 @@
+{
+  "title": "Welcome To WHITE WINGS",
+  "description": "With over a decade of experience in Surat's real estate, White Wings Group has delivered residential, commercial, and land development projects known for quality, innovation, and timely execution. From row houses to IGBC-certified green buildings, we focus on modern design, safety, and creating spaces that enhance lifestyles.",
+  "process": {
+    "title": "Our process",
+    "steps": "Discover → Connect → Visit → Finalize → Settle In"
+  },
+  "cta": {
+    "label": "Explore Properties",
+    "href": "/properties"
+  },
+  "images": [
+    "/src/assets/images/showcase-1.jpg",
+    "/src/assets/images/showcase-2.jpg",
+    "/src/assets/images/showcase-3.png"
+  ],
+  "stats": [
+    {
+      "value": "13,34,000 SQ.FT",
+      "label": "Residential"
+    },
+    {
+      "value": "6,40,000 SQ.FT",
+      "label": "Commercial"
+    },
+    {
+      "value": "14,00,000 SQ.FT",
+      "label": "Land Development"
+    }
+  ]
+}
+

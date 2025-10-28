@@ -1,0 +1,3 @@
+export { PlacardIntro } from './PlacardIntro';
+
+
