@@ -63,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({
       )}
       role="banner"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-2 lg:px-6">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
