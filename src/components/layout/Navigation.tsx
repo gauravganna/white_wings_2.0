@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 interface NavigationItem {
   id: string;
@@ -42,28 +43,33 @@ export const Navigation: React.FC<NavigationProps> = ({
       aria-label="Main navigation"
     >
       {data.items.map((item) => (
-        <a
+        <NavLink
           key={item.id}
-          href={item.href}
+          to={item.href}
+          end={item.href === '/'}
           onClick={() => handleItemClick(item)}
-          className={cn(
-            "relative text-sm font-medium transition-colors duration-200",
-            "hover:text-ww-blue-600 focus:text-ww-blue-600",
-            "focus:outline-none focus:ring-2 focus:ring-ww-blue-500 focus:ring-offset-2 rounded-sm px-2 py-1",
-            item.isActive 
-              ? "text-ww-blue-600" 
-              : "text-ww-gray-700 hover:text-ww-blue-600"
-          )}
-          aria-current={item.isActive ? "page" : undefined}
+          className={({ isActive }) =>
+            cn(
+              "relative text-sm font-medium transition-colors duration-200",
+              "hover:text-ww-blue-600 focus:text-ww-blue-600",
+              "focus:outline-none rounded-sm px-2 py-1",
+              isActive ? "text-ww-blue-600" : "text-ww-gray-700 hover:text-ww-blue-600"
+            )
+          }
+          aria-current={({ isActive }) => (isActive ? 'page' : undefined) as any}
         >
-          {item.label}
-          {item.isActive && (
-            <span 
-              className="absolute bottom-0 left-0 w-full h-0.5 bg-ww-blue-600 rounded-full"
-              aria-hidden="true"
-            />
+          {({ isActive }) => (
+            <>
+              {item.label}
+              {isActive && (
+                <span
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-ww-blue-600 rounded-full"
+                  aria-hidden="true"
+                />
+              )}
+            </>
           )}
-        </a>
+        </NavLink>
       ))}
     </nav>
   );
