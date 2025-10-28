@@ -1,0 +1,45 @@
+{
+  "title": "Insights & Updates",
+  "description": "Stories, tips and updates from White Wings Group.",
+  "posts": [
+    {
+      "slug": "designing-better-living-spaces",
+      "title": "Designing Better Living Spaces",
+      "subtitle": "Simple principles that improve everyday comfort",
+      "author": { "name": "Editorial Team", "avatar": "/src/assets/images/showcase-1.jpg" },
+      "date": "2025-10-01",
+      "readingMinutes": 5,
+      "coverImage": "/src/assets/images/showcase-2.jpg",
+      "tags": ["Design", "Lifestyle"],
+      "excerpt": "A quick guide on light, flow and materials that make homes feel great.",
+      "content": [
+        { "type": "heading", "depth": 2, "text": "Start with natural light" },
+        { "type": "paragraph", "text": "Prioritize large windows and keep sightlines open. Natural light makes spaces feel bigger and happier." },
+        { "type": "image", "src": "/src/assets/images/showcase-3.png", "alt": "Sunlit living room" },
+        { "type": "heading", "depth": 2, "text": "Create flow with zoning" },
+        { "type": "paragraph", "text": "Define areas for cooking, relaxing and working. Use rugs and lighting to separate zones without walls." },
+        { "type": "list", "ordered": false, "items": [
+          "Let circulation be obvious",
+          "Place furniture away from door swings",
+          "Keep key pathways at least 90 cm wide"
+        ]}
+      ]
+    },
+    {
+      "slug": "why-green-buildings-matter",
+      "title": "Why Green Buildings Matter",
+      "subtitle": "Healthier homes, lower bills, stronger communities",
+      "author": { "name": "Editorial Team", "avatar": "/src/assets/images/showcase-4.png" },
+      "date": "2025-10-15",
+      "readingMinutes": 4,
+      "coverImage": "/src/assets/images/showcase-1.jpg",
+      "tags": ["Sustainability"],
+      "excerpt": "From daylighting to water reuse, small decisions add up to lasting impact.",
+      "content": [
+        { "type": "paragraph", "text": "Green buildings are efficient by design. They reduce energy and water use while improving comfort." }
+      ]
+    }
+  ]
+}
+
+

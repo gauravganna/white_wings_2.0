@@ -1,6 +1,7 @@
+import BlogDetailPage from '@/routes/BlogDetailPage'
+import BlogListPage from '@/routes/BlogListPage'
 import MediaPage from '@/routes/MediaPage'
 import NotFoundPage from '@/routes/NotFoundPage'
-import PhotoGalleryPage from '@/routes/PhotoGalleryPage'
 import PropertiesIndexPage from '@/routes/PropertiesIndexPage'
 import PropertyDetailPage from '@/routes/PropertyDetailPage'
 import React from 'react'
@@ -10,8 +11,9 @@ import App from './App.tsx'
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
-  { path: '/photos', element: <PhotoGalleryPage /> },
   { path: '/media', element: <MediaPage /> },
+  { path: '/blog', element: <BlogListPage /> },
+  { path: '/blog/:slug', element: <BlogDetailPage /> },
   { path: '/properties', element: <PropertiesIndexPage /> },
   { path: '/property/:slug', element: <PropertyDetailPage /> },
   { path: '*', element: <NotFoundPage /> }

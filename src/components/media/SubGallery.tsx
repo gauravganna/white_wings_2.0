@@ -22,7 +22,7 @@ export const SubGallery: React.FC<SubGalleryProps> = ({ title, images, maxRows =
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
         {visible.map((src, i) => (
           <figure key={i} className="relative bg-white rounded-sm overflow-hidden aspect-[4/3]">
-            <img src={src} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-" />
+            <img src={src} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           </figure>
         ))}
         {remaining > 0 && (
