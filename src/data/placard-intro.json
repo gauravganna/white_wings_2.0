@@ -5,6 +5,13 @@
     "title": "Our process",
     "steps": "Discover → Connect → Visit → Finalize → Settle In"
   },
+  "processDetails": [
+    { "title": "Discover:", "text": "Browse our curated properties online." },
+    { "title": "Connect:", "text": "Schedule a consultation with our team." },
+    { "title": "Visit:", "text": "Take a guided tour of properties you love." },
+    { "title": "Finalize:", "text": "Our team helps you with all the paperwork." },
+    { "title": "Settle In:", "text": "Move into your new home." }
+  ],
   "cta": {
     "label": "Explore Properties",
     "href": "/properties"

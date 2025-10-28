@@ -1,6 +1,7 @@
 import { Placard } from '@/components/common/Placard';
 import { ShowcasePlacard } from '@/components/common/ShowcasePlacard';
 import { Footer } from '@/components/footer';
+import { HeroSection } from '@/components/hero-section';
 import { Header } from '@/components/layout';
 import { PlacardIntro } from '@/components/placard-intro';
 import { ProjectsMarquee } from '@/components/projects/ProjectsMarquee';
@@ -11,6 +12,7 @@ import footerData from '@/data/footer.json';
 import headerData from '@/data/header.json';
 import '@/styles/globals.css';
 
+
 function App() {
   const handleNewsletterSubscribe = async (email: string) => {
     console.log('Newsletter subscription:', email);
@@ -20,6 +22,7 @@ function App() {
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
       <main className="flex-1">
+        <HeroSection />
         <PlacardIntro />
         <ShowcasePlacard />
         <ProjectsMarquee />

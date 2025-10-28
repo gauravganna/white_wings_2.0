@@ -1,0 +1,13 @@
+{
+  "title": "Simplify Your Home Search",
+  "subtitle": "We filter out low-rated properties, ensuring only safe, top-reviewed homes making your home search smarter and stress free.",
+  "cta": { "label": "Schedule a call", "href": "/contact" },
+  "carouselImage": "/src/assets/images/hero-carousel.png",
+  "gridImages": [
+    "/src/assets/images/showcase-1.jpg",
+    "/src/assets/images/showcase-2.jpg",
+    "/src/assets/images/showcase-3.png"
+  ]  
+}
+
+
