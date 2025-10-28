@@ -1,0 +1,40 @@
+{
+  "title": "COMPILATION OF ALL THE EVENTS",
+  "galleries": [
+    {
+      "title": "MASSIMO EVENTS",
+      "images": [
+        "/src/assets/images/showcase-1.jpg",
+        "/src/assets/images/showcase-2.jpg",
+        "/src/assets/images/showcase-3.png",
+        "/src/assets/images/showcase-4.png",
+        "/src/assets/images/showcase-1.jpg",
+        "/src/assets/images/showcase-2.jpg",
+        "/src/assets/images/showcase-3.png",
+        "/src/assets/images/showcase-4.png",
+        "/src/assets/images/showcase-1.jpg",
+        "/src/assets/images/showcase-2.jpg"
+      ]
+    },
+    {
+      "title": "TORRANCE",
+      "images": [
+        "/src/assets/images/showcase-1.jpg",
+        "/src/assets/images/showcase-2.jpg",
+        "/src/assets/images/showcase-3.png",
+        "/src/assets/images/showcase-4.png"
+      ]
+    },
+    {
+      "title": "BELLA CASA",
+      "images": [
+        "/src/assets/images/showcase-1.jpg",
+        "/src/assets/images/showcase-2.jpg",
+        "/src/assets/images/showcase-3.png",
+        "/src/assets/images/showcase-4.png"
+      ]
+    }
+  ]
+}
+
+
