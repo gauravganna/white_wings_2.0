@@ -62,5 +62,18 @@
       "contactUrl": "#",
       "detailUrl": "/properties/business-park"
     }
+    ,
+    {
+      "id": "p6",
+      "type": "land",
+      "name": "Green Meadows",
+      "address": "Outer Ring Road, Surat",
+      "phone": "+91 98240-99444",
+      "image": "/src/assets/images/sample-image1.webp",
+      "logo": "/src/assets/images/avatar1.png",
+      "brochureUrl": "#",
+      "contactUrl": "#",
+      "detailUrl": "/properties/green-meadows"
+    }
   ]
 }

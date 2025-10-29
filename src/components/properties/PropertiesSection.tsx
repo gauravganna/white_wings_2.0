@@ -3,13 +3,13 @@ import React from 'react';
 import { PropertyCard } from './PropertyCard';
 
 interface Props {
-  type?: 'residential' | 'commercial';
+  type?: 'residential' | 'commercial' | 'land';
   title?: string;
 }
 
 export const PropertiesSection: React.FC<Props> = ({ type, title }) => {
   const items = type ? (data.items as any[]).filter((p) => p.type === type) : (data.items as any[]);
-  const sectionTitle = title ?? (type ? (type === 'commercial' ? 'Commercial' : 'Residential') : data.title);
+  const sectionTitle = title ?? (type ? (type === 'commercial' ? 'Commercial' : type === 'land' ? 'Land Development' : 'Residential') : data.title);
 
   return (
     <section aria-labelledby="properties-title" className="bg-gradient-to-b from-white to-ww-gray-50">
