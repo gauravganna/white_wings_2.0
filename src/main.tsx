@@ -1,5 +1,6 @@
 import BlogDetailPage from '@/routes/BlogDetailPage'
 import BlogListPage from '@/routes/BlogListPage'
+import CareerPage from '@/routes/CareerPage'
 import ContactPage from '@/routes/ContactPage'
 import MediaPage from '@/routes/MediaPage'
 import NotFoundPage from '@/routes/NotFoundPage'
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   { path: '/', element: <App /> },
   { path: '/media', element: <MediaPage /> },
   { path: '/contact', element: <ContactPage /> },
+  { path: '/career', element: <CareerPage /> },
   { path: '/blog', element: <BlogListPage /> },
   { path: '/blog/:slug', element: <BlogDetailPage /> },
   { path: '/properties', element: <PropertiesIndexPage /> },

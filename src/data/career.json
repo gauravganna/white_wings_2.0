@@ -1,0 +1,15 @@
+{
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119076.2999292086!2d72.64763291640625!3d21.147050099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05209994c8081%3A0xf338528a74a1522e!2sWhite%20Wings%20Torrance!5e0!3m2!1sen!2sin!4v1761676965595!5m2!1sen!2sin",
+  "email": "hr@whitewingsgroup.in",
+  "phone": "+91 98240-99444",
+  "address": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007",
+  "socials": [
+    { "label": "Facebook", "url": "https://facebook.com" },
+    { "label": "Instagram", "url": "https://instagram.com" },
+    { "label": "LinkedIn", "url": "https://linkedin.com" },
+    { "label": "YouTube", "url": "https://youtube.com" }
+  ],
+  "formspreeFormId": ""
+}
+
+
