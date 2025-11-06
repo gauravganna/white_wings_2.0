@@ -15,10 +15,10 @@ const PropertiesIndexPage: React.FC = () => {
       <main className="flex-1">
         <PropertyScopeHero value={type} onChange={setType} />
         <div className="container mx-auto px-4 py-10">
-          <PropertiesSection type={type} />
+          <PropertiesSection type={type} showCta={false} mobileStack limit={Infinity} />
         </div>
       </main>
-      <Footer data={footerData} onNewsletterSubscribe={async () => {}} />
+      <Footer data={footerData as any} onNewsletterSubscribe={async () => {}} />
     </div>
   )
 }

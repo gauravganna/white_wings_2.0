@@ -20,82 +20,61 @@ export const PropertyScopeHero: React.FC<Props> = ({ value, onChange }) => {
           <h1 className="text-3xl md:text-4xl font-semibold text-center text-ww-gray-800 mb-6">Property Scope</h1>
           
           {/* Curved connectors with arrows */}
-          <div className="relative mx-auto w-full max-w-5xl h-20 md:h-24 mb-2">
+          <div className="relative mx-auto w-full max-w-5xl h-20 md:h-24">
             <svg className="absolute inset-0 w-full h-full text-ww-gray-400" viewBox="0 0 1000 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
               <defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
                   <polygon points="0 0, 10 3, 0 6" fill="currentColor" />
                 </marker>
               </defs>
-              {/* Mobile: larger span from title to options */}
-              <g className="md:hidden">
+              {/* Mobile: same style as desktop, width-adjusted and centered, no arrows */}
+              <g className="md:hidden" transform="translate(100 0)">
                 <path
-                  d="M 500 8 A 680 220 0 0 0 160 126"
+                  d="M0 100
+                    C0 10, 120 10, 300 10
+                    H500
+                    C680 10, 800 50, 800 100"
                   stroke="currentColor"
-                  strokeWidth="2.25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeWidth="2.75"
                   fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
+                  opacity="0.45"
                 />
-                <path
-                  d="M 500 8 L 500 126"
+                <line
+                  x1="400"
+                  y1="10"
+                  x2="400"
+                  y2="80"
                   stroke="currentColor"
-                  strokeWidth="2.25"
-                  strokeLinecap="round"
-                  fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
-                />
-                <path
-                  d="M 500 8 A 680 220 0 0 1 840 126"
-                  stroke="currentColor"
-                  strokeWidth="2.25"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
+                  strokeWidth="1.75"
                 />
               </g>
 
-              {/* Desktop: gentle arcs */}
-              <g className="hidden md:block">
+              {/* Desktop: gentle arcs (centered under title) */}
+              <g className="hidden md:block" transform="translate(100 0)">
                 <path
-                  d="M 500 12 A 360 220 0 0 0 200 90"
+                  d="M0 100
+                    C0 40, 120 0, 300 0
+                    H500
+                    C680 0, 800 40, 800 100"
                   stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeWidth="3.5"
                   fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
+                  opacity="0.4"
                 />
-                <path
-                  d="M 500 12 L 500 90"
+
+                <line
+                  x1="400"
+                  y1="0"
+                  x2="400"
+                  y2="70"
                   stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
-                />
-                <path
-                  d="M 500 12 A 360 220 0 0 1 800 90"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  markerEnd="url(#arrowhead)"
-                  shapeRendering="geometricPrecision"
+                  strokeWidth="1.5"
                 />
               </g>
             </svg>
           </div>
 
-          <div className="flex items-center justify-center gap-4 md:gap-32">
+          <div className="mx-auto w-full md:w-[80%] md:max-w-[800px] grid grid-cols-3 place-items-center gap-2 sm:gap-6 md:mt-0">
             {options.map((opt) => {
               const active = value === opt.value
             return (
@@ -103,10 +82,10 @@ export const PropertyScopeHero: React.FC<Props> = ({ value, onChange }) => {
                 key={opt.value}
                 type="button"
                 onClick={() => onChange(opt.value)}
-                className={
-                  'text-sm md:text-lg tracking-wide transition-colors' +
-                  (active ? 'text-2xl md:text-3xl text-ww-gray-900 font-semibold' : ' text-ww-gray-500 hover:text-ww-gray-800')
-                }
+                  className={
+                    'text-xs sm:text-sm md:text-lg tracking-wide transition-colors text-center leading-tight break-words' +
+                    (active ? ' text-base sm:text-lg md:text-2xl text-ww-gray-900 font-semibold' : ' text-ww-gray-500 hover:text-ww-gray-800')
+                  }
                 aria-pressed={active}
               >
                 {opt.label}
