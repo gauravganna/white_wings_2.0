@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
+import { PropertiesBlurb } from '@/components/properties/PropertiesBlurb'
 import { PropertiesSection } from '@/components/properties/PropertiesSection'
 import { PropertyScopeHero, PropertyType } from '@/components/properties/PropertyScopeHero'
 import footerData from '@/data/footer.json'
@@ -17,6 +18,7 @@ const PropertiesIndexPage: React.FC = () => {
         <div className="container mx-auto px-4 py-10">
           <PropertiesSection type={type} showCta={false} mobileStack limit={Infinity} />
         </div>
+        <PropertiesBlurb type={type} />
       </main>
       <Footer data={footerData as any} onNewsletterSubscribe={async () => {}} />
     </div>

@@ -1,6 +1,20 @@
 {
   "title": "Residential",
   "cta": { "label": "More", "href": "#" },
+  "blurbs": {
+    "residential": {
+      "title": "White wings Group",
+      "body": "Remember, finding the perfect home or investment isn’t just about the property—it’s about choosing a space that truly fits your life. At White Wings, we offer a carefully selected range of homes, from luxurious villas to cozy apartments, along with detailed listings and expert guidance to support you every step of the way. Explore with confidence and make a choice that feels right."
+    },
+    "commercial": {
+      "title": "White wings Group",
+      "body": "{data.properties.blurbs.commercial.body}"
+    },
+    "land": {
+      "title": "White wings Group",
+      "body": "{data.properties.blurbs.land.body}"
+    }
+  },
   "items": [
     {
       "id": "p1",
