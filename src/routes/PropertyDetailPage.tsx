@@ -1,5 +1,8 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
+
+import { PropertyDetailInfo } from '@/components/properties/PropertyDetailInfo'
+import { PropertyHero } from '@/components/properties/PropertyHero'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
 import properties from '@/data/properties.json'
@@ -8,35 +11,76 @@ import { useParams } from 'react-router-dom'
 
 const PropertyDetailPage: React.FC = () => {
   const { slug } = useParams()
-  const property = (properties.items as any[]).find(p => p.slug === slug)
+  const items = (properties.items as any[])
+  const property = items.find(p => (p.slug ?? p.detailUrl?.split('/').pop()) === slug)
 
   return (
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
-      <main className="flex-1 container mx-auto px-4 py-10">
+      <main className="flex-1">
         {!property ? (
-          <p className="text-ww-gray-700">Property not found.</p>
+          <div className="container mx-auto px-4 py-10">
+            <p className="text-ww-gray-700">Property not found.</p>
+          </div>
         ) : (
-          <article aria-labelledby="prop-title" className="space-y-6">
-            <header>
-              <h1 id="prop-title" className="text-3xl font-semibold">{property.title}</h1>
-              <p className="text-ww-gray-600">{property.location}</p>
-            </header>
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src={property.image} alt={property.title} className="rounded-lg object-cover w-full h-64 md:h-96" />
-              <div className="space-y-3">
-                <div>
-                  <h2 className="font-semibold">Overview</h2>
-                  <p className="text-ww-gray-700">{property.description}</p>
+          <>
+            <PropertyHero
+              item={{
+                name: property.name ?? property.title,
+                phone: property.phone,
+                brochureUrl: property.brochureUrl,
+                heroImages: property.heroImages,
+                image: property.image,
+                detailInfo: property.detailInfo,
+              }}
+            />
+
+            {/* Anchor target sections – placeholders for real data */}
+            <div className="container mx-auto px-4 py-10 space-y-16">
+              <section id="amenities" aria-labelledby="amenities-title">
+                <h2 id="amenities-title" className="text-2xl font-semibold mb-4">{`{data.property.amenities.title}`}</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-ww-gray-700">
+                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
+                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
+                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
+                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
                 </div>
-                <a href={property.brochureUrl} className="text-ww-blue-700 underline">Download brochure</a>
-                <a href={`tel:${property.phone}`} className="text-ww-blue-700 underline block">Call: {property.phone}</a>
-              </div>
-            </section>
-          </article>
+              </section>
+
+              <section id="images" aria-labelledby="images-title">
+                <h2 id="images-title" className="text-2xl font-semibold mb-4">{`{data.property.images.title}`}</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {[1,2,3,4,5,6].map(i => (
+                    <div key={i} className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
+                  ))}
+                </div>
+              </section>
+
+              <section id="videos" aria-labelledby="videos-title">
+                <h2 id="videos-title" className="text-2xl font-semibold mb-4">{`{data.property.videos.title}`}</h2>
+                <div className="aspect-video bg-ww-gray-200 rounded-md" aria-hidden="true" />
+              </section>
+
+              <section id="plans" aria-labelledby="plans-title">
+                <h2 id="plans-title" className="text-2xl font-semibold mb-4">{`{data.property.plans.title}`}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
+                  <div className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
+                </div>
+              </section>
+
+              {/* Bottom text blocks with responsive mobile bar */}
+              <PropertyDetailInfo
+                blocks={(property.detailInfo as any) ?? ((properties as any).detailInfoDefaults as any)}
+                phone={property.phone}
+                brochureUrl={property.brochureUrl}
+              />
+
+            </div>
+          </>
         )}
       </main>
-      <Footer data={footerData} onNewsletterSubscribe={async () => {}} />
+      <Footer data={footerData as any} onNewsletterSubscribe={async () => {}} />
     </div>
   )
 }

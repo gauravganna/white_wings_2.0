@@ -15,6 +15,11 @@
       "body": "{data.properties.blurbs.land.body}"
     }
   },
+  "detailInfoDefaults": [
+    { "title": "{data.property.detailInfo[0].title}", "body": "{data.property.detailInfo[0].body}" },
+    { "title": "{data.property.detailInfo[1].title}", "body": "{data.property.detailInfo[1].body}" },
+    { "title": "{data.property.detailInfo[2].title}", "body": "{data.property.detailInfo[2].body}" }
+  ],
   "items": [
     {
       "id": "p1",
@@ -26,7 +31,21 @@
       "logo": "/src/assets/images/majoris.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/torrance"
+      "detailUrl": "/property/torrance",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.\n\nBeyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "1st",
+          "body": "IGBC\nPlatinum Green Building"
+        }
+      ]
     },
     {
       "id": "p2",
@@ -38,7 +57,21 @@
       "logo": "/src/assets/images/massimo.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/bella-casa"
+      "detailUrl": "/property/bella-casa",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.\n\nBeyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "",
+          "body": ""
+        }
+      ]
     },
     {
       "id": "p3",
@@ -50,7 +83,21 @@
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/flamingo"
+      "detailUrl": "/property/flamingo",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.</br></br>Beyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "",
+          "body": ""
+        }
+      ]
     },
     {
       "id": "p4",
@@ -62,7 +109,21 @@
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/white-wings-square"
+      "detailUrl": "/property/white-wings-square",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.\n\nBeyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "",
+          "body": ""
+        }
+      ]
     },
     {
       "id": "p5",
@@ -74,7 +135,21 @@
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/business-park"
+      "detailUrl": "/property/business-park",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.\n\nBeyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "",
+          "body": ""
+        }
+      ]
     }
     ,
     {
@@ -87,7 +162,21 @@
       "logo": "/src/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
-      "detailUrl": "/properties/green-meadows"
+      "detailUrl": "/property/green-meadows",
+      "detailInfo": [
+        {
+          "title": "Location",
+          "body": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007"
+        },
+        {
+          "title": "",
+          "body": "Torrance is a premium residential project in Surat, proudly recognized as the city's first IGBC Pre-Certified Platinum Green Building. Located on the bustling G.D. Goenka Canal Road in Vesu, this 13-floor development features two wings of spacious 4BHK apartments — just 52 exclusive flats in a gated community. Designed with vastu compliance and an emphasis on sustainability, Torrance offers a blend of luxury and environmental responsibility through features like a 25KW solar power system, abundant daylight, UPVC windows, and energy-efficient systems.\n\nBeyond its architecture, Torrance offers an elevated lifestyle with state-of-the-art amenities including Jacuzzi & steam bath, a ceremonial hall, modern fitness center, and double basement parking. Residents enjoy a calm yet connected experience with scenic terraces, a landscaped garden equipped with music systems, and thoughtful additions like water softeners and open plumbing. Torrance is where refined living meets green innovation — crafted for those who value both comfort and conscience."
+        },
+        {
+          "title": "",
+          "body": ""
+        }
+      ]
     }
   ]
 }
