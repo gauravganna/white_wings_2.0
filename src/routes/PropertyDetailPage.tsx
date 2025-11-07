@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
 
+import { PropertyAmenities } from '@/components/properties/PropertyAmenities'
 import { PropertyDetailInfo } from '@/components/properties/PropertyDetailInfo'
 import { PropertyHero } from '@/components/properties/PropertyHero'
 import footerData from '@/data/footer.json'
@@ -36,16 +37,12 @@ const PropertyDetailPage: React.FC = () => {
             />
 
             {/* Anchor target sections – placeholders for real data */}
-            <div className="container mx-auto px-4 py-10 space-y-16">
-              <section id="amenities" aria-labelledby="amenities-title">
-                <h2 id="amenities-title" className="text-2xl font-semibold mb-4">{`{data.property.amenities.title}`}</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-ww-gray-700">
-                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
-                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
-                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
-                  <div className="rounded-md bg-ww-gray-100 h-20" aria-hidden="true" />
-                </div>
-              </section>
+            <div className="container mx-auto px-2 py-4 space-y-16">
+              <PropertyAmenities
+                title={(property.amenities && (property.amenities as any).title) || ((properties as any).amenitiesDefaults.title)}
+                image={(property.amenities && (property.amenities as any).image) || ((properties as any).amenitiesDefaults.image)}
+                amenities={(property.amenities && (property.amenities as any).items) || ((properties as any).amenitiesDefaults.items)}
+              />
 
               <section id="images" aria-labelledby="images-title">
                 <h2 id="images-title" className="text-2xl font-semibold mb-4">{`{data.property.images.title}`}</h2>

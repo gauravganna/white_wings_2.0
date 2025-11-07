@@ -20,6 +20,20 @@
     { "title": "{data.property.detailInfo[1].title}", "body": "{data.property.detailInfo[1].body}" },
     { "title": "{data.property.detailInfo[2].title}", "body": "{data.property.detailInfo[2].body}" }
   ],
+  "amenitiesDefaults": {
+    "title": "{data.property.amenities.title}",
+    "image": "/src/assets/images/sample-image1.webp",
+    "items": [
+      { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/plumbing.svg" },
+      { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+      { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+      { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/parking.svg" },
+      { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/jacuzzi.svg" },
+      { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/plumbing.svg" },
+      { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+      { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+    ]
+  },
   "items": [
     {
       "id": "p1",
@@ -45,7 +59,21 @@
           "title": "1st",
           "body": "IGBC\nPlatinum Green Building"
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     },
     {
       "id": "p2",
@@ -71,7 +99,21 @@
           "title": "",
           "body": ""
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     },
     {
       "id": "p3",
@@ -97,7 +139,21 @@
           "title": "",
           "body": ""
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     },
     {
       "id": "p4",
@@ -123,7 +179,21 @@
           "title": "",
           "body": ""
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     },
     {
       "id": "p5",
@@ -149,7 +219,21 @@
           "title": "",
           "body": ""
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     }
     ,
     {
@@ -176,7 +260,21 @@
           "title": "",
           "body": ""
         }
-      ]
+      ],
+      "amenities": {
+        "title": "Amenities for 52 flats only",
+        "image": "/src/assets/images/sample-image1.webp",
+        "items": [
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      }
     }
   ]
 }
