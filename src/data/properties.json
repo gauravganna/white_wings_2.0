@@ -34,6 +34,15 @@
       { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
     ]
   },
+  "galleryDefaults": {
+    "title": "Images",
+    "items": [
+      { "src": "/src/assets/images/sample-image1.webp" },
+      { "src": "/src/assets/images/sample-image1.webp" },
+      { "src": "/src/assets/images/sample-image1.webp" },
+      { "src": "/src/assets/images/sample-image1.webp" }
+    ]
+  },
   "items": [
     {
       "id": "p1",
@@ -72,6 +81,15 @@
           { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
         ]
       }
     },
@@ -113,6 +131,15 @@
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
         ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
+        ]
       }
     },
     {
@@ -152,6 +179,15 @@
           { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
         ]
       }
     },
@@ -193,6 +229,15 @@
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
         ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
+        ]
       }
     },
     {
@@ -232,6 +277,15 @@
           { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
         ]
       }
     }
@@ -273,6 +327,15 @@
           { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
           { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
           { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+        ]
+      },
+      "gallery": {
+        "title": "Images",
+        "items": [
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" },
+          { "src": "/src/assets/images/sample-image1.webp" }
         ]
       }
     }

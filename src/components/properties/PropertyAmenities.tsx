@@ -18,7 +18,7 @@ export const PropertyAmenities: React.FC<PropertyAmenitiesProps> = ({ title = 'A
 
   return (
     <section id="amenities" aria-labelledby="amenities-title" className="bg-white">
-      <div className="container mx-auto px-2 md:px-4 py-0 md:py-14">
+      <div className="container mx-auto px-2 md:px-4 py-0 md:pt-6">
         <h2 id="amenities-title" className="text-2xl md:text-3xl font-semibold text-ww-gray-900 mb-6 md:mb-8">
           Amenities
         </h2>

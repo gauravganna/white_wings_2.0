@@ -4,6 +4,7 @@ import { Header } from '@/components/layout'
 import { PropertyAmenities } from '@/components/properties/PropertyAmenities'
 import { PropertyDetailInfo } from '@/components/properties/PropertyDetailInfo'
 import { PropertyHero } from '@/components/properties/PropertyHero'
+import { PropertyImages } from '@/components/properties/PropertyImages'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
 import properties from '@/data/properties.json'
@@ -44,14 +45,10 @@ const PropertyDetailPage: React.FC = () => {
                 amenities={(property.amenities && (property.amenities as any).items) || ((properties as any).amenitiesDefaults.items)}
               />
 
-              <section id="images" aria-labelledby="images-title">
-                <h2 id="images-title" className="text-2xl font-semibold mb-4">{`{data.property.images.title}`}</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {[1,2,3,4,5,6].map(i => (
-                    <div key={i} className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
-                  ))}
-                </div>
-              </section>
+              <PropertyImages
+                title={(property.gallery && (property.gallery as any).title) || ((properties as any).galleryDefaults.title)}
+                images={(property.gallery && (property.gallery as any).items) || ((properties as any).galleryDefaults.items)}
+              />
 
               <section id="videos" aria-labelledby="videos-title">
                 <h2 id="videos-title" className="text-2xl font-semibold mb-4">{`{data.property.videos.title}`}</h2>
