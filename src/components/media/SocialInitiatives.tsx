@@ -28,7 +28,7 @@ export const SocialInitiatives: React.FC<SocialInitiativesProps> = ({ title = 'S
 
   return (
     <section id="initiatives" aria-labelledby="initiatives-heading" className="bg-white">
-      <div className="container mx-auto px-4 pt-0 md:pt-6">
+      <div className="container mx-auto px-4 pt-8 md:pt-6">
         <header className="mb-6 md:mb-8">
           <h2 id="initiatives-heading" className="text-2xl md:text-3xl font-semibold text-ww-gray-900">
             {title}

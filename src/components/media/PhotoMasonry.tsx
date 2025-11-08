@@ -28,7 +28,7 @@ export const PhotoMasonry: React.FC<PhotoMasonryProps> = ({
 
   return (
     <section id="photo" aria-labelledby="photo-gallery-heading" className="bg-white">
-      <div className="container mx-auto px-4 pt-8 md:pt-16">
+      <div className="container mx-auto px-4 pt-8 md:pt-6">
         <header className="mb-6 md:mb-8">
           <h2 id="photo-gallery-heading" className="text-2xl md:text-3xl font-semibold text-ww-gray-900">
             {title}
