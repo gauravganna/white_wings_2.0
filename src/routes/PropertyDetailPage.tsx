@@ -5,6 +5,7 @@ import { PropertyAmenities } from '@/components/properties/PropertyAmenities'
 import { PropertyDetailInfo } from '@/components/properties/PropertyDetailInfo'
 import { PropertyHero } from '@/components/properties/PropertyHero'
 import { PropertyImages } from '@/components/properties/PropertyImages'
+import { PropertyVideo } from '@/components/properties/PropertyVideo'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
 import properties from '@/data/properties.json'
@@ -50,10 +51,13 @@ const PropertyDetailPage: React.FC = () => {
                 images={(property.gallery && (property.gallery as any).items) || ((properties as any).galleryDefaults.items)}
               />
 
-              <section id="videos" aria-labelledby="videos-title">
-                <h2 id="videos-title" className="text-2xl font-semibold mb-4">{`{data.property.videos.title}`}</h2>
-                <div className="aspect-video bg-ww-gray-200 rounded-md" aria-hidden="true" />
-              </section>
+              <PropertyVideo
+                heading={(property.video && (property.video as any).heading) || ((properties as any).videoDefaults.heading)}
+                title={(property.video && (property.video as any).title) || ((properties as any).videoDefaults.title)}
+                summary={(property.video && (property.video as any).summary) || ((properties as any).videoDefaults.summary)}
+                cta={(property.video && (property.video as any).cta) || ((properties as any).videoDefaults.cta)}
+                video={(property.video && (property.video as any).video) || ((properties as any).videoDefaults.video)}
+              />
 
               <section id="plans" aria-labelledby="plans-title">
                 <h2 id="plans-title" className="text-2xl font-semibold mb-4">{`{data.property.plans.title}`}</h2>

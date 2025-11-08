@@ -43,6 +43,13 @@
       { "src": "/src/assets/images/sample-image1.webp" }
     ]
   },
+  "videoDefaults": {
+    "heading": "Video",
+    "title": "{data.property.video.title}",
+    "summary": "{data.property.video.summary}",
+    "cta": { "label": "Visit", "href": "#" },
+    "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+  },
   "items": [
     {
       "id": "p1",
@@ -91,6 +98,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "Drone Video of TORRANCE",
+        "summary": "Take a bird’s-eye view of Torrance — Surat’s first IGBC Pre-Certified Platinum Green Building. Explore its striking architecture, lush landscapes, and thoughtfully planned surroundings through this aerial walkthrough.",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Drone Video of TORRANCE" }
       }
     },
     {
@@ -140,6 +153,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "{data.property.video.title}",
+        "summary": "{data.property.video.summary}",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
       }
     },
     {
@@ -189,6 +208,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "{data.property.video.title}",
+        "summary": "{data.property.video.summary}",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
       }
     },
     {
@@ -238,6 +263,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "{data.property.video.title}",
+        "summary": "{data.property.video.summary}",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
       }
     },
     {
@@ -287,6 +318,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "{data.property.video.title}",
+        "summary": "{data.property.video.summary}",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
       }
     }
     ,
@@ -337,6 +374,12 @@
           { "src": "/src/assets/images/sample-image1.webp" },
           { "src": "/src/assets/images/sample-image1.webp" }
         ]
+      },
+      "video": {
+        "title": "{data.property.video.title}",
+        "summary": "{data.property.video.summary}",
+        "cta": { "label": "Visit", "href": "#" },
+        "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
       }
     }
   ]
