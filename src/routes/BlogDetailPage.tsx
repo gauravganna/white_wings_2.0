@@ -18,7 +18,7 @@ const BlogDetailPage: React.FC = () => {
         {!post ? (
           <div className="container mx-auto px-4 py-12">
             <p className="text-ww-gray-700">Post not found.</p>
-            <Link to="/blog" className="text-ww-blue-700 underline">Back to blog</Link>
+            <Link to="/media/blog" className="text-ww-blue-700 underline">Back to media blog</Link>
           </div>
         ) : (
           <article className="bg-white">

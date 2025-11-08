@@ -1,40 +1,126 @@
 {
-  "title": "COMPILATION OF ALL THE EVENTS",
-  "galleries": [
-    {
-      "title": "MASSIMO EVENTS",
-      "images": [
-        "/src/assets/images/showcase-1.jpg",
-        "/src/assets/images/showcase-2.jpg",
-        "/src/assets/images/showcase-3.png",
-        "/src/assets/images/showcase-4.png",
-        "/src/assets/images/showcase-1.jpg",
-        "/src/assets/images/showcase-2.jpg",
-        "/src/assets/images/showcase-3.png",
-        "/src/assets/images/showcase-4.png",
-        "/src/assets/images/showcase-1.jpg",
-        "/src/assets/images/showcase-2.jpg"
-      ]
-    },
-    {
-      "title": "TORRANCE",
-      "images": [
-        "/src/assets/images/showcase-1.jpg",
-        "/src/assets/images/showcase-2.jpg",
-        "/src/assets/images/showcase-3.png",
-        "/src/assets/images/showcase-4.png"
-      ]
-    },
-    {
-      "title": "BELLA CASA",
-      "images": [
-        "/src/assets/images/showcase-1.jpg",
-        "/src/assets/images/showcase-2.jpg",
-        "/src/assets/images/showcase-3.png",
-        "/src/assets/images/showcase-4.png"
-      ]
-    }
-  ]
+  "landing": {
+    "title": "{data.media.landing.title}",
+    "subtitle": "{data.media.landing.subtitle}",
+    "description": "{data.media.landing.description}",
+    "sections": [
+      {
+        "id": "photo",
+        "title": "{data.media.landing.sections[0].title}",
+        "description": "{data.media.landing.sections[0].description}",
+        "href": "/media/photo"
+      },
+      {
+        "id": "video",
+        "title": "{data.media.landing.sections[1].title}",
+        "description": "{data.media.landing.sections[1].description}",
+        "href": "/media/video"
+      },
+      {
+        "id": "blog",
+        "title": "{data.media.landing.sections[2].title}",
+        "description": "{data.media.landing.sections[2].description}",
+        "href": "/media/blog"
+      }
+    ]
+  },
+  "photo": {
+    "title": "Compilation of All the Events",
+    "description": "",
+    "galleries": [
+      {
+        "title": "Massimo Events",
+        "images": [
+          "/src/assets/images/showcase-1.jpg",
+          "/src/assets/images/showcase-2.jpg",
+          "/src/assets/images/showcase-3.png",
+          "/src/assets/images/showcase-4.png",
+          "/src/assets/images/showcase-1.jpg",
+          "/src/assets/images/showcase-2.jpg",
+          "/src/assets/images/showcase-3.png",
+          "/src/assets/images/showcase-4.png",
+          "/src/assets/images/showcase-1.jpg",
+          "/src/assets/images/showcase-2.jpg"
+        ]
+      },
+      {
+        "title": "Torrance",
+        "images": [
+          "/src/assets/images/showcase-1.jpg",
+          "/src/assets/images/showcase-2.jpg",
+          "/src/assets/images/showcase-3.png",
+          "/src/assets/images/showcase-4.png"
+        ]
+      },
+      {
+        "title": "Bella Casa",
+        "images": [
+          "/src/assets/images/showcase-1.jpg",
+          "/src/assets/images/showcase-2.jpg",
+          "/src/assets/images/showcase-3.png",
+          "/src/assets/images/showcase-4.png"
+        ]
+      }
+    ]
+  },
+  "video": {
+    "title": "{data.media.video.title}",
+    "description": "{data.media.video.description}",
+    "galleries": [
+      {
+        "title": "{data.media.video.galleries[0].title}",
+        "videos": [
+          {
+            "title": "{data.media.video.galleries[0].videos[0].title}",
+            "thumbnail": "/src/assets/images/showcase-1.jpg",
+            "source": {
+              "type": "youtube",
+              "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            }
+          },
+          {
+            "title": "{data.media.video.galleries[0].videos[1].title}",
+            "thumbnail": "/src/assets/images/showcase-2.jpg",
+            "source": {
+              "type": "vimeo",
+              "embedUrl": "https://player.vimeo.com/video/76979871?h=8272103f6e"
+            }
+          },
+          {
+            "title": "{data.media.video.galleries[0].videos[2].title}",
+            "thumbnail": "/src/assets/images/showcase-3.png",
+            "source": {
+              "type": "file",
+              "fileUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+              "mimeType": "video/mp4"
+            }
+          }
+        ]
+      },
+      {
+        "title": "{data.media.video.galleries[1].title}",
+        "videos": [
+          {
+            "title": "{data.media.video.galleries[1].videos[0].title}",
+            "thumbnail": "/src/assets/images/showcase-4.png",
+            "source": {
+              "type": "youtube",
+              "embedUrl": "https://www.youtube.com/embed/ysz5S6PUM-U"
+            }
+          },
+          {
+            "title": "{data.media.video.galleries[1].videos[1].title}",
+            "thumbnail": "/src/assets/images/showcase-2.jpg",
+            "source": {
+              "type": "file",
+              "fileUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+              "mimeType": "video/mp4"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 
 
