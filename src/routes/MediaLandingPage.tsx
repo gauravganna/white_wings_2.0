@@ -4,12 +4,11 @@ import MediaBlogsPreview from '@/components/media/MediaBlogsPreview'
 import MediaHero from '@/components/media/MediaHero'
 import PhotoMasonry from '@/components/media/PhotoMasonry'
 import SocialInitiatives from '@/components/media/SocialInitiatives'
-import { VideoGallerySection } from '@/components/media/VideoGallerySection'
+import VideoMasonry from '@/components/media/VideoMasonry'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
 import media from '@/data/media.json'
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const MediaLandingPage: React.FC = () => {
   const landing = (media as any)?.landing ?? {}
@@ -55,20 +54,12 @@ const MediaLandingPage: React.FC = () => {
           viewAllHref="/media/photo"
         />
 
-        {/* Video Gallery */}
-        <section id="video" aria-labelledby="video-heading" className="bg-white">
-          <div className="container mx-auto px-4 py-10 space-y-6">
-            <h2 id="video-heading" className="text-2xl md:text-3xl font-semibold text-ww-gray-900">
-              {video?.title ?? '{data.media.video.title}'}
-            </h2>
-            {(video?.galleries ?? []).map((g: any, idx: number) => (
-              <VideoGallerySection key={idx} title={g.title ?? `{data.media.video.galleries[${idx}].title}`} videos={g.videos ?? []} />
-            ))}
-            <div className="pt-2">
-              <Link to="/media/video" className="text-sm font-medium text-ww-blue-700 hover:underline">See full video gallery</Link>
-            </div>
-          </div>
-        </section>
+        {/* Video Gallery - unstructured collage like photo */}
+        <VideoMasonry
+          title="Video Gallery"
+          videos={((video?.galleries ?? []) as any[]).flatMap((g) => (g.videos ?? []))}
+          viewAllHref="/media/video"
+        />
       </main>
       <Footer data={footerData as any} onNewsletterSubscribe={async () => {}} />
     </div>
