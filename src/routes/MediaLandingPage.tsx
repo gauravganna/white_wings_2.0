@@ -18,7 +18,7 @@ const MediaLandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
-      <main className="flex-1">
+      <main className="flex-1 pb-6">
         {/* Hero with left nav + right media */}
         <MediaHero
           item={{
