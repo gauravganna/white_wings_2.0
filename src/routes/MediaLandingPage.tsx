@@ -2,8 +2,8 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
 import MediaBlogsPreview from '@/components/media/MediaBlogsPreview'
 import MediaHero from '@/components/media/MediaHero'
+import PhotoMasonry from '@/components/media/PhotoMasonry'
 import SocialInitiatives from '@/components/media/SocialInitiatives'
-import { SubGallery } from '@/components/media/SubGallery'
 import { VideoGallerySection } from '@/components/media/VideoGallerySection'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
@@ -49,20 +49,11 @@ const MediaLandingPage: React.FC = () => {
           images={landing.initiatives?.images ?? []}
         />
 
-        {/* Photo Gallery */}
-        <section id="photo" aria-labelledby="photo-heading" className="bg-white">
-          <div className="container mx-auto px-4 py-10 space-y-6">
-            <h2 id="photo-heading" className="text-2xl md:text-3xl font-semibold text-ww-gray-900">
-              {photo?.title ?? '{data.media.photo.title}'}
-            </h2>
-            {(photo?.galleries ?? []).map((g: any, idx: number) => (
-              <SubGallery key={idx} title={g.title ?? `{data.media.photo.galleries[${idx}].title}`} images={g.images ?? []} />
-            ))}
-            <div className="pt-2">
-              <Link to="/media/photo" className="text-sm font-medium text-ww-blue-700 hover:underline">See full photo gallery</Link>
-            </div>
-          </div>
-        </section>
+        {/* Photo Gallery - unstructured collage with limits + CTAs */}
+        <PhotoMasonry
+          images={((photo?.galleries ?? []) as any[]).flatMap((g) => g.images ?? [])}
+          viewAllHref="/media/photo"
+        />
 
         {/* Video Gallery */}
         <section id="video" aria-labelledby="video-heading" className="bg-white">
