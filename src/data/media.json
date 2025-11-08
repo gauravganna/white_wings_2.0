@@ -1,8 +1,21 @@
 {
   "landing": {
-    "title": "{data.media.landing.title}",
-    "subtitle": "{data.media.landing.subtitle}",
-    "description": "{data.media.landing.description}",
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "hero": {
+      "headline": "",
+      "summary": "",
+      "highlight": {
+        "title": "1st",
+        "subtitle": "IGBC Platinum Pre-Certified Building in Surat",
+        "summary": "Explore properties you might love before moving on to our social initiatives, photo galleries, and video gallery."
+      },
+      "media": {
+        "src": "/src/assets/images/showcase-1.jpg",
+        "alt": "Media"
+      }
+  },
     "sections": [
       {
         "id": "photo",
