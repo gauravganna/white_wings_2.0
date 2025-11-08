@@ -35,6 +35,17 @@
       { "name": "Member Two", "role": "Director", "photo": "/src/assets/images/showcase-3.png" },
       { "name": "Member Three", "role": "Operations", "photo": "/src/assets/images/showcase-4.png" }
     ]
+  },
+  "why": {
+    "title": "Why Choose Us?",
+    "description": "At White Wings Group, we don’t just build properties; we create lasting value and thriving communities.",
+    "background": { "src": "/src/assets/images/about-us-background.png", "alt": "{data.about.why.background.alt}" },
+    "items": [
+      { "title": "Uncompromising Quality", "description": "Precision-driven construction, vetted materials, and proven processes that ensure durability and trust.", "icon": "/src/assets/images/icons/building2.png" },
+      { "title": "Sustainable Excellence", "description": "Environmentally conscious practices with smart planning that stand the test of time.", "icon": "/src/assets/images/icons/money.png" },
+      { "title": "Proficient Services", "description": "End-to-end execution with seamless coordination, timely updates and professional handling.", "icon": "/src/assets/images/icons/buildingy.png" },
+      { "title": "Customer-Centric Approach", "description": "Transparent communication and personalized solutions at every step of the journey.", "icon": "/src/assets/images/icons/customer-centric.png" }
+    ]
   }
 }
 

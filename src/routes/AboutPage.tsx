@@ -1,8 +1,8 @@
 import AboutHeroPlaceholder from '@/components/about/AboutHeroPlaceholder'
 import AboutIntro from '@/components/about/AboutIntro'
-import AboutStats from '@/components/about/AboutStats'
 import AboutTeam from '@/components/about/AboutTeam'
 import AboutTimeline from '@/components/about/AboutTimeline'
+import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
 import about from '@/data/about.json'
@@ -31,8 +31,13 @@ const AboutPage: React.FC = () => {
           images={(about as any).intro?.images}
         />
 
-        {/* Stats */}
-        <AboutStats items={(about as any).stats ?? []} />
+        {/* Why Choose Us */}
+        <AboutWhyChooseUs
+          title={(about as any).why?.title}
+          description={(about as any).why?.description}
+          background={(about as any).why?.background}
+          items={(about as any).why?.items}
+        />
 
         {/* Timeline */}
         <AboutTimeline title={(about as any).timeline?.title} items={(about as any).timeline?.items ?? []} />
