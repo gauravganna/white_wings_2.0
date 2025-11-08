@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "{data.about.hero.title}",
+    "subtitle": "{data.about.hero.subtitle}",
+    "image": { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.hero.image.alt}" }
+  },
+  "intro": {
+    "overline": "",
+    "title": "About",
+    "subtitle": "White Wings Torrance is the 1stbuilding in Surat to get Pre-certified Platinum Green Building Certificate from Indian Green Building Council (IGBC)(CII) - IGBC Green Homes Rating System.",
+    "description": "White Wings Group is a unique name which has developed land for luxurious and comfortable Residence, Commercial as well as land development in the City Surat and its surroundings. \n\nThe group has experience of more than a decade in the construction area with timely innovations, meticulous planning, constant updating of Methodologies and acquisition of the latest equipment’s and infrastructural techniques. Since its inception, the group has evolved to achieve trust and reputation of rank in the industry with its best-in-class development projects. Thriving on its core values of trust, quality, expertise and integrity, it has several prestigious projects in the Residential, Commercial as well as land development domain to its credit. Professionally managed Real Estate Group, started its activity by the Row House Construction in dazzling city Surat. For the last many years, the group has undertaken and developed some of the prestigious Projects in the Diamond City Surat. The Group is committed to excellent quality and aesthetic constructions at affordable prices comparable to prevailing market trends. \n\nThe Projects meet high safety standards and each project planned, managed and executed with innovative designs, structures, modern and new amenities with timely deliveries of the projects within time schedules. We introduced Flat Slab in living, kitchen and dining area in our Residential projects. The team is proactive in every aspect of customer satisfaction. Group strive to achieve the highest degree of technical excellence while maintaining the best business practices in all the endeavors and put efforts to make the individuals dreams come true.",
+    "images": [
+      { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.intro.images[0].alt}" },
+      { "src": "/src/assets/images/showcase-2.jpg", "alt": "{data.about.intro.images[1].alt}" }
+    ]
+  },
+  "stats": [
+    { "label": "{data.about.stats[0].label}", "value": "25+" },
+    { "label": "{data.about.stats[1].label}", "value": "1M+" },
+    { "label": "{data.about.stats[2].label}", "value": "10+" },
+    { "label": "{data.about.stats[3].label}", "value": "4.9★" }
+  ],
+  "timeline": {
+    "title": "{data.about.timeline.title}",
+    "items": [
+      { "year": "2008", "title": "{data.about.timeline.items[0].title}", "description": "{data.about.timeline.items[0].description}" },
+      { "year": "2015", "title": "{data.about.timeline.items[1].title}", "description": "{data.about.timeline.items[1].description}" },
+      { "year": "2022", "title": "{data.about.timeline.items[2].title}", "description": "{data.about.timeline.items[2].description}" }
+    ]
+  },
+  "team": {
+    "title": "{data.about.team.title}",
+    "people": [
+      { "name": "Member One", "role": "Founder", "photo": "/src/assets/images/showcase-2.jpg" },
+      { "name": "Member Two", "role": "Director", "photo": "/src/assets/images/showcase-3.png" },
+      { "name": "Member Three", "role": "Operations", "photo": "/src/assets/images/showcase-4.png" }
+    ]
+  }
+}
+
+

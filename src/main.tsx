@@ -1,3 +1,4 @@
+import AboutPage from '@/routes/AboutPage'
 import BlogDetailPage from '@/routes/BlogDetailPage'
 import BlogListPage from '@/routes/BlogListPage'
 import CareerPage from '@/routes/CareerPage'
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   { path: '/media/video', element: <MediaVideoPage /> },
   { path: '/media/blog', element: <BlogListPage /> },
   { path: '/media/blog/:slug', element: <BlogDetailPage /> },
+  { path: '/about', element: <AboutPage /> },
   { path: '/contact', element: <ContactPage /> },
   { path: '/career', element: <CareerPage /> },
   { path: '/properties', element: <PropertiesIndexPage /> },
