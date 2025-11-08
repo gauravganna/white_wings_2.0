@@ -20,7 +20,20 @@
         { "src": "/src/assets/images/showcase-2.jpg", "alt": "{data.media.landing.hero.gridImages[1].alt}" },
         { "src": "/src/assets/images/showcase-3.png", "alt": "{data.media.landing.hero.gridImages[2].alt}" }
       ]
-  },
+    },
+    "initiatives": {
+      "title": "Social Initiatives",
+      "subtitle": "Explore our social initiatives, photo galleries, and video gallery.",
+      "images": [
+        "/src/assets/social-initiatives/4f5fcda907af4e4c8e51e90e7f9247c098a5c010.jpg",
+        "/src/assets/social-initiatives/3f8737b36e85864dcaecca865c3c067ed35253b7.jpg",
+        "/src/assets/social-initiatives/6b2d9a9397fd5db48a2910a450b6caad038e7ec6.jpg",
+        "/src/assets/social-initiatives/22f40bd220a992da010ca047867350c0cfe274e1.jpg",
+        "/src/assets/social-initiatives/64a8ab24e01e49d5fb3b76cf85d2dbb73695cccb.jpg",
+        "/src/assets/social-initiatives/83580a0169b5a1a6349ec4ef528e7237bbfcaab5.jpg",
+        "/src/assets/social-initiatives/ab9e69193854b86dcb461c044d689a6419964c1b.jpg"
+      ]
+    },
     "sections": [
       {
         "id": "photo",

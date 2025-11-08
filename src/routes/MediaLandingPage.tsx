@@ -2,7 +2,7 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
 import MediaBlogsPreview from '@/components/media/MediaBlogsPreview'
 import MediaHero from '@/components/media/MediaHero'
-import MediaInitiatives from '@/components/media/MediaInitiatives'
+import SocialInitiatives from '@/components/media/SocialInitiatives'
 import { SubGallery } from '@/components/media/SubGallery'
 import { VideoGallerySection } from '@/components/media/VideoGallerySection'
 import footerData from '@/data/footer.json'
@@ -43,7 +43,11 @@ const MediaLandingPage: React.FC = () => {
         <MediaBlogsPreview title={landing.blogs?.title ?? 'Blogs'} />
 
         {/* Social Initiatives */}
-        <MediaInitiatives title={landing.initiatives?.title ?? 'Social Initiatives'} items={landing.initiatives?.items ?? []} />
+        <SocialInitiatives
+          title={landing.initiatives?.title ?? 'Social Initiatives'}
+          subtitle={landing.initiatives?.subtitle ?? '{data.media.landing.initiatives.subtitle}'}
+          images={landing.initiatives?.images ?? []}
+        />
 
         {/* Photo Gallery */}
         <section id="photo" aria-labelledby="photo-heading" className="bg-white">
