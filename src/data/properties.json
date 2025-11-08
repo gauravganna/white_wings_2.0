@@ -43,6 +43,13 @@
       { "src": "/src/assets/images/sample-image1.webp" }
     ]
   },
+  "plansDefaults": {
+    "title": "{data.property.plans.title}",
+    "items": [
+      { "src": "/src/assets/images/sample-image1.webp", "label": "{data.property.plans.items[0].label}" },
+      { "src": "/src/assets/images/sample-image1.webp", "label": "{data.property.plans.items[1].label}" }
+    ]
+  },
   "videoDefaults": {
     "heading": "Video",
     "title": "{data.property.video.title}",
@@ -104,6 +111,14 @@
         "summary": "Take a bird’s-eye view of Torrance — Surat’s first IGBC Pre-Certified Platinum Green Building. Explore its striking architecture, lush landscapes, and thoughtfully planned surroundings through this aerial walkthrough.",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Drone Video of TORRANCE" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     },
     {
@@ -159,6 +174,13 @@
         "summary": "{data.property.video.summary}",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     },
     {
@@ -214,6 +236,13 @@
         "summary": "{data.property.video.summary}",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     },
     {
@@ -269,6 +298,13 @@
         "summary": "{data.property.video.summary}",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     },
     {
@@ -324,6 +360,13 @@
         "summary": "{data.property.video.summary}",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     }
     ,
@@ -380,6 +423,13 @@
         "summary": "{data.property.video.summary}",
         "cta": { "label": "Visit", "href": "#" },
         "video": { "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ", "title": "Property Video" }
+      },
+      "plans": {
+        "title": "Plans",
+        "items": [
+          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+        ]
       }
     }
   ]

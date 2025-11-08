@@ -2,9 +2,9 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
 
 import { PropertyAmenities } from '@/components/properties/PropertyAmenities'
-import { PropertyDetailInfo } from '@/components/properties/PropertyDetailInfo'
 import { PropertyHero } from '@/components/properties/PropertyHero'
 import { PropertyImages } from '@/components/properties/PropertyImages'
+import { PropertyPlans } from '@/components/properties/PropertyPlans'
 import { PropertyVideo } from '@/components/properties/PropertyVideo'
 import footerData from '@/data/footer.json'
 import headerData from '@/data/header.json'
@@ -59,20 +59,24 @@ const PropertyDetailPage: React.FC = () => {
                 video={(property.video && (property.video as any).video) || ((properties as any).videoDefaults.video)}
               />
 
-              <section id="plans" aria-labelledby="plans-title">
-                <h2 id="plans-title" className="text-2xl font-semibold mb-4">{`{data.property.plans.title}`}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
-                  <div className="aspect-[4/3] bg-ww-gray-200 rounded-md" aria-hidden="true" />
-                </div>
-              </section>
+              {(() => {
+                const planItems =
+                  (property.plans && Array.isArray((property.plans as any).items) && (property.plans as any).items.length > 0
+                    ? (property.plans as any).items
+                    : ((properties as any).plansDefaults?.items ?? [])) as any[]
 
-              {/* Bottom text blocks with responsive mobile bar */}
-              <PropertyDetailInfo
-                blocks={(property.detailInfo as any) ?? ((properties as any).detailInfoDefaults as any)}
-                phone={property.phone}
-                brochureUrl={property.brochureUrl}
-              />
+                const filteredPlans = (planItems ?? []).filter((plan) => plan && plan.src)
+
+                if (filteredPlans.length === 0) {
+                  return null
+                }
+
+                const planTitle =
+                  (property.plans && (property.plans as any).title) || ((properties as any).plansDefaults?.title ?? 'Plans')
+
+                return <PropertyPlans title={planTitle} items={filteredPlans} />
+              })()}
+
 
             </div>
           </>
