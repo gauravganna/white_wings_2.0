@@ -1,8 +1,7 @@
+import AboutCertificates from '@/components/about/AboutCertificates'
 import AboutHeroPlaceholder from '@/components/about/AboutHeroPlaceholder'
 import AboutIntro from '@/components/about/AboutIntro'
 import AboutShowcase from '@/components/about/AboutShowcase'
-import AboutTeam from '@/components/about/AboutTeam'
-import AboutTimeline from '@/components/about/AboutTimeline'
 import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/layout'
@@ -55,11 +54,12 @@ const AboutPage: React.FC = () => {
           achievementsItems={((about as any).achievements?.items ?? []) as any}
         />
 
-        {/* Timeline */}
-        <AboutTimeline title={(about as any).timeline?.title} items={(about as any).timeline?.items ?? []} />
+        {/* Certificate & Awards */}
+        <AboutCertificates
+          title={(about as any).certificates?.title}
+          images={((about as any).certificates?.images ?? []) as any}
+        />
 
-        {/* Team */}
-        <AboutTeam title={(about as any).team?.title} people={(about as any).team?.people ?? []} />
       </main>
       <Footer data={footerData as any} onNewsletterSubscribe={async () => {}} />
     </div>

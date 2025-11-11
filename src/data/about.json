@@ -78,6 +78,14 @@
       }
     ]
   },
+  "certificates": {
+    "title": "Certificate and Awards",
+    "images": [
+      "/src/assets/images/certificates/certificate1.jpg",
+      "/src/assets/images/certificates/certificate2.jpg",
+      "/src/assets/images/certificates/certificate3.jpg"
+    ]
+  },
   "achievements": {
     "title": "Detail Of Membership",
     "items": [
