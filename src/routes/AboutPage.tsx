@@ -1,8 +1,6 @@
-import AboutAchievements from '@/components/about/AboutAchievements'
-import AboutFounder from '@/components/about/AboutFounder'
 import AboutHeroPlaceholder from '@/components/about/AboutHeroPlaceholder'
 import AboutIntro from '@/components/about/AboutIntro'
-import AboutLeadership from '@/components/about/AboutLeadership'
+import AboutShowcase from '@/components/about/AboutShowcase'
 import AboutTeam from '@/components/about/AboutTeam'
 import AboutTimeline from '@/components/about/AboutTimeline'
 import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs'
@@ -42,23 +40,20 @@ const AboutPage: React.FC = () => {
           items={(about as any).why?.items}
         />
 
-        {/* About Founder */}
-        <AboutFounder
-          title={(about as any).founder?.title}
+        {/* Founder + Leadership + Achievements – stacked on mobile, single-view carousel on desktop */}
+        <AboutShowcase
           founder={{
+            title: (about as any).founder?.title,
             name: (about as any).founder?.name,
             image: (about as any).founder?.image,
             visionaryTitle: (about as any).founder?.visionaryTitle,
             visionaryText: (about as any).founder?.visionaryText,
             socials: (about as any).founder?.socials,
           }}
+          leaders={((about as any).leadership?.members ?? []) as any}
+          achievementsTitle={(about as any).achievements?.title}
+          achievementsItems={((about as any).achievements?.items ?? []) as any}
         />
-
-        {/* Leadership rows (Founder and Wife) */}
-        <AboutLeadership leaders={((about as any).leadership?.members ?? []) as any} />
-
-        {/* Achievements / Memberships */}
-        <AboutAchievements title={(about as any).achievements?.title} items={((about as any).achievements?.items ?? []) as any} />
 
         {/* Timeline */}
         <AboutTimeline title={(about as any).timeline?.title} items={(about as any).timeline?.items ?? []} />
