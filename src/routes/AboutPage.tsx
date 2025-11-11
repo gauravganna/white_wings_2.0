@@ -1,5 +1,8 @@
+import AboutAchievements from '@/components/about/AboutAchievements'
+import AboutFounder from '@/components/about/AboutFounder'
 import AboutHeroPlaceholder from '@/components/about/AboutHeroPlaceholder'
 import AboutIntro from '@/components/about/AboutIntro'
+import AboutLeadership from '@/components/about/AboutLeadership'
 import AboutTeam from '@/components/about/AboutTeam'
 import AboutTimeline from '@/components/about/AboutTimeline'
 import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs'
@@ -38,6 +41,24 @@ const AboutPage: React.FC = () => {
           background={(about as any).why?.background}
           items={(about as any).why?.items}
         />
+
+        {/* About Founder */}
+        <AboutFounder
+          title={(about as any).founder?.title}
+          founder={{
+            name: (about as any).founder?.name,
+            image: (about as any).founder?.image,
+            visionaryTitle: (about as any).founder?.visionaryTitle,
+            visionaryText: (about as any).founder?.visionaryText,
+            socials: (about as any).founder?.socials,
+          }}
+        />
+
+        {/* Leadership rows (Founder and Wife) */}
+        <AboutLeadership leaders={((about as any).leadership?.members ?? []) as any} />
+
+        {/* Achievements / Memberships */}
+        <AboutAchievements title={(about as any).achievements?.title} items={((about as any).achievements?.items ?? []) as any} />
 
         {/* Timeline */}
         <AboutTimeline title={(about as any).timeline?.title} items={(about as any).timeline?.items ?? []} />

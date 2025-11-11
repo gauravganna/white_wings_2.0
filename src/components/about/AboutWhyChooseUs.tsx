@@ -83,7 +83,7 @@ export const AboutWhyChooseUs: React.FC<AboutWhyChooseUsProps> = ({
 
           {/* Right 75% column: 2x2 grid on desktop; stack on mobile */}
           <div className="md:col-span-3">
-            <div className="grid grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 gap-4 md:gap-6 md:pr-8">
               {items.slice(0, 4).map((it, idx) => (
                 <article key={idx} className="bg-white/95 md:bg-white shadow-sm border border-ww-gray-200 p-2 md:p-5 z-10">
                   <div className="space-y-3">
