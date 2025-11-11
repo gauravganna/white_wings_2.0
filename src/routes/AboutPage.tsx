@@ -1,5 +1,5 @@
 import AboutCertificates from '@/components/about/AboutCertificates'
-import AboutHeroPlaceholder from '@/components/about/AboutHeroPlaceholder'
+import AboutHeroAnimated from '@/components/about/AboutHeroAnimated'
 import AboutIntro from '@/components/about/AboutIntro'
 import AboutShowcase from '@/components/about/AboutShowcase'
 import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs'
@@ -15,11 +15,12 @@ const AboutPage: React.FC = () => {
     <div className="min-h-screen bg-ww-gray-50 flex flex-col">
       <Header data={headerData} />
       <main className="flex-1">
-        {/* Hero Placeholder - final hero will replace this section later */}
-        <AboutHeroPlaceholder
-          title={(about as any).hero?.title}
-          subtitle={(about as any).hero?.subtitle}
-          image={(about as any).hero?.image}
+        {/* Animated Hero */}
+        <AboutHeroAnimated
+          videoSrc={(about as any).hero?.videoSrc}
+          leftText={(about as any).hero?.leftText}
+          rightText={(about as any).hero?.rightText}
+          carouselImages={((about as any).hero?.carousel?.images ?? []) as any}
         />
 
         {/* Intro */}

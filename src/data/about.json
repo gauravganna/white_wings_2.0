@@ -2,7 +2,20 @@
   "hero": {
     "title": "{data.about.hero.title}",
     "subtitle": "{data.about.hero.subtitle}",
-    "image": { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.hero.image.alt}" }
+    "image": { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.hero.image.alt}" },
+    "videoSrc": "/src/assets/video.mp4",
+    "leftText": "WH",
+    "rightText": "TE",
+    "carousel": {
+      "images": [
+        { "src": "/src/assets/images/showcase-1.jpg", "alt": "Project image 1" },
+        { "src": "/src/assets/images/showcase-2.jpg", "alt": "Project image 2" },
+        { "src": "/src/assets/images/showcase-3.png", "alt": "Project image 3" },
+        { "src": "/src/assets/images/showcase-4.png", "alt": "Project image 4" },
+        { "src": "/src/assets/images/jignesh.jpg", "alt": "Founder" },
+        { "src": "/src/assets/images/anupa.jpg", "alt": "Leadership" }
+      ]
+    }
   },
   "intro": {
     "overline": "",
