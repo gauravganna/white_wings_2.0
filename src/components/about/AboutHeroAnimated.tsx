@@ -116,7 +116,8 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
   }
 
   return (
-    <section className="relative w-full h-[calc(100vh-90px)] bg-white overflow-hidden" aria-label="About hero">
+    <>
+    <section className="hidden md:block relative w-full h-[calc(100vh-90px)] bg-white overflow-hidden" aria-label="About hero">
       {/* Group container moves both WHITE and the subheading together */}
       <motion.div
         className="absolute inset-0 z-10"
@@ -290,6 +291,52 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
         </div>
       )}
     </section>
+
+    {/* Mobile hero (separate simplified layout) */}
+    <section className="block md:hidden w-full bg-white pb-6" aria-label="About hero mobile">
+      <div className="px-4 pt-10 pb-6 text-center">
+        <h1 className="text-[22vw] leading-none font-extrabold tracking-tight text-black">WHITE</h1>
+        <p className="mt-2 text-3xl font-semibold text-ww-gray-900">
+          <span className="text-[#7DAADB]">Wings</span> Group
+        </p>
+      </div>
+      {carouselImages.length > 0 && (
+        <div className="px-4 overflow-hidden">
+          <motion.div
+            className="flex gap-3"
+            animate={{ x: ['0%', '-50%'] }}
+            transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+          >
+            {[...carouselImages, ...carouselImages].map((img, i) => (
+              <figure key={i} className="shrink-0 w-[70vw] aspect-[4/3] rounded-lg overflow-hidden ring-1 ring-black/5 bg-white">
+                <img src={img.src} alt={img.alt ?? ''} className="h-full w-full object-cover" loading="lazy" />
+              </figure>
+            ))}
+          </motion.div>
+        </div>
+      )}
+      {(mission || vision) && (
+        <div className="px-4 space-y-4">
+          {mission && (
+            <article className="rounded-xl bg-white shadow-xl ring-1 ring-black/5 p-5">
+              <h3 className="text-2xl font-semibold text-ww-gray-900">{mission.title || 'Mission'}</h3>
+              {mission.description && (
+                <p className="mt-3 text-ww-gray-700 text-sm leading-relaxed">{mission.description}</p>
+              )}
+            </article>
+          )}
+          {vision && (
+            <article className="rounded-xl bg-white shadow-xl ring-1 ring-black/5 p-5">
+              <h3 className="text-2xl font-semibold text-ww-gray-900">{vision.title || 'Vision'}</h3>
+              {vision.description && (
+                <p className="mt-3 text-ww-gray-700 text-sm leading-relaxed">{vision.description}</p>
+              )}
+            </article>
+          )}
+        </div>
+      )}
+    </section>
+    </>
   )
 }
 
