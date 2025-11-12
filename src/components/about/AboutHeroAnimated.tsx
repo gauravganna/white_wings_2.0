@@ -6,6 +6,7 @@ export interface AboutHeroAnimatedProps {
   leftText?: string
   rightText?: string
   carouselImages?: Array<{ src: string; alt?: string }>
+  subheading?: string
   /** Delay before animation kicks in (ms) */
   startDelayMs?: number
   /** Duration of the shrink-to-I animation (ms) */
@@ -17,11 +18,13 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
   leftText = 'WH',
   rightText = 'TE',
   carouselImages = [],
+  subheading = 'Wings Group',
   startDelayMs = 500,
   animationDurationMs = 2000,
 }) => {
   const [animationStarted, setAnimationStarted] = useState(false)
   const [carouselStarted, setCarouselStarted] = useState(false)
+  const [zoomOut, setZoomOut] = useState(false)
   const videoRef = useRef<HTMLVideoElement | null>(null)
 
   useEffect(() => {
@@ -31,11 +34,15 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
     return () => clearTimeout(timer)
   }, [startDelayMs])
 
-  // Start the carousel right after the shrink animation completes
+  // Start the carousel and then zoom out after 1s pause
   useEffect(() => {
     if (!animationStarted) return
-    const t = setTimeout(() => setCarouselStarted(true), animationDurationMs)
-    return () => clearTimeout(t)
+    const t1 = setTimeout(() => setCarouselStarted(true), animationDurationMs)
+    const t2 = setTimeout(() => setZoomOut(true), animationDurationMs + 1000)
+    return () => {
+      clearTimeout(t1)
+      clearTimeout(t2)
+    }
   }, [animationStarted, animationDurationMs])
 
   useEffect(() => {
@@ -103,73 +110,94 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
 
   return (
     <section className="relative w-full h-[calc(100vh-90px)] bg-white overflow-hidden" aria-label="About hero">
-      {/* Video element transforms into the center “I” */}
+      {/* Wrapper around WHITE composition so we can zoom it out after a pause */}
       <motion.div
-        variants={videoVariants}
-        initial="initial"
-        animate={animationStarted ? 'animate' : 'initial'}
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+        className="absolute inset-0 z-10 origin-center"
+        initial={{ scale: 1, y: 0 }}
+        animate={zoomOut ? { scale: 0.58, y: '-6vh' } : { scale: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
+        style={{ transformOrigin: 'center center' }}
       >
-        {videoSrc ? (
-          <video
-            ref={videoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-            style={{ borderRadius: 'inherit' }}
-            onClick={handleVideoClick}
+        {/* Video element transforms into the center “I” */}
+        <motion.div
+          variants={videoVariants}
+          initial="initial"
+          animate={animationStarted ? 'animate' : 'initial'}
+          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          {videoSrc ? (
+            <video
+              ref={videoRef}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+              style={{ borderRadius: 'inherit' }}
+              onClick={handleVideoClick}
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </video>
+          ) : (
+            <div className="w-full h-full bg-ww-gray-200" />
+          )}
+        </motion.div>
+
+        {/* Left text */}
+        <motion.div
+          variants={leftTextVariants}
+          initial="initial"
+          animate={animationStarted ? 'animate' : 'initial'}
+          className="absolute top-1/3 -translate-y-1/2"
+          style={{ right: 'calc(45% + 4.17vw + 1.39vw)' }}
+        >
+          <h1
+            className="font-extrabold text-black select-none leading-[0.217] tracking-[-0.38%]"
+            style={{
+              fontSize: 'clamp(15vw, 25vw, 25vw)',
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: 800,
+            }}
+            aria-hidden="true"
           >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        ) : (
-          <div className="w-full h-full bg-ww-gray-200" />
-        )}
+            {leftText}
+          </h1>
+        </motion.div>
+
+        {/* Right text */}
+        <motion.div
+          variants={rightTextVariants}
+          initial="initial"
+          animate={animationStarted ? 'animate' : 'initial'}
+          className="absolute top-1/3 -translate-y-1/2"
+          style={{ left: 'calc(55% + 4.17vw + 1.39vw)' }}
+        >
+          <h1
+            className="font-extrabold text-black select-none leading-[0.217] tracking-[-0.38%]"
+            style={{
+              fontSize: 'clamp(15vw, 25vw, 25vw)',
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: 800,
+            }}
+            aria-hidden="true"
+          >
+            {rightText}
+          </h1>
+        </motion.div>
       </motion.div>
 
-      {/* Left text */}
-      <motion.div
-        variants={leftTextVariants}
-        initial="initial"
-        animate={animationStarted ? 'animate' : 'initial'}
-        className="absolute top-1/3 -translate-y-1/2 z-20"
-        style={{ right: 'calc(45% + 4.17vw + 1.39vw)' }}
-      >
-        <h1
-          className="font-extrabold text-black select-none leading-[0.217] tracking-[-0.38%]"
-          style={{
-            fontSize: 'clamp(15vw, 25vw, 25vw)',
-            fontFamily: 'Inter, sans-serif',
-            fontWeight: 800,
-          }}
-          aria-hidden="true"
+      {/* Subheading appears after zoom out */}
+      {zoomOut && (
+        <motion.p
+          className="absolute left-1/2 top-[44vh] -translate-x-1/2 text-3xl md:text-6xl text-ww-gray-900 z-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
         >
-          {leftText}
-        </h1>
-      </motion.div>
-
-      {/* Right text */}
-      <motion.div
-        variants={rightTextVariants}
-        initial="initial"
-        animate={animationStarted ? 'animate' : 'initial'}
-        className="absolute top-1/3 -translate-y-1/2 z-20"
-        style={{ left: 'calc(55% + 4.17vw + 1.39vw)' }}
-      >
-        <h1
-          className="font-extrabold text-black select-none leading-[0.217] tracking-[-0.38%]"
-          style={{
-            fontSize: 'clamp(15vw, 25vw, 25vw)',
-            fontFamily: 'Inter, sans-serif',
-            fontWeight: 800,
-          }}
-          aria-hidden="true"
-        >
-          {rightText}
-        </h1>
-      </motion.div>
+          {subheading}
+        </motion.p>
+      )}
 
       {/* Carousel appears after the WHITE animation completes */}
       {carouselStarted && carouselImages.length > 0 && (
