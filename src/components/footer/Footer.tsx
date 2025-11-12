@@ -10,7 +10,7 @@ interface FooterData {
   newsletter: NewsletterData;
   social: { label: string; items: Array<{ id: string; label: string; href: string; icon: string }> };
   quickLinks: { label: string; items: Array<{ id: string; label: string; href: string }> };
-  contact: { label: string; phone: { text: string; href: string }, email: { text: string; href: string } };
+  contact: { label: string; phone: { text: string; href: string; icon?: string }, email: { text: string; href: string; icon?: string } };
   legal?: { copyright: string; links: Array<{ id: string; label: string; href: string }> };
 }
 

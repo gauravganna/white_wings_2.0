@@ -1,7 +1,7 @@
 import { Mail, Phone } from 'lucide-react';
 import React from 'react';
 
-interface ContactItem { text: string; href: string; icon: 'phone' | 'mail' }
+interface ContactItem { text: string; href: string; icon?: 'phone' | 'mail' | string }
 interface ContactData { phone: ContactItem; email: ContactItem }
 
 export const FooterContact: React.FC<ContactData> = ({ phone, email }) => {

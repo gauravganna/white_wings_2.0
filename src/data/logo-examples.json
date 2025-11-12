@@ -2,7 +2,7 @@
   "examples": {
     "fullLogo": {
       "image": {
-        "src": "/src/assets/images/white-wings-logo-full.png",
+        "src": "/assets/images/white-wings-logo-full.png",
         "alt": "White Wings Group - We Transform Space",
         "width": 150,
         "height": 50
@@ -11,7 +11,7 @@
     },
     "iconOnly": {
       "image": {
-        "src": "/src/assets/images/white-wings-icon.png",
+        "src": "/assets/images/white-wings-icon.png",
         "alt": "White Wings Group",
         "width": 40,
         "height": 40
@@ -20,7 +20,7 @@
     },
     "textWithIcon": {
       "image": {
-        "src": "/src/assets/images/white-wings-icon.png",
+        "src": "/assets/images/white-wings-icon.png",
         "alt": "White Wings Group",
         "width": 32,
         "height": 32

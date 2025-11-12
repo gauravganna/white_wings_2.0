@@ -7,11 +7,9 @@ export interface InfoBlock {
 
 interface PropertyDetailInfoProps {
   blocks: InfoBlock[]
-  phone?: string
-  brochureUrl?: string
 }
 
-export const PropertyDetailInfo: React.FC<PropertyDetailInfoProps> = ({ blocks, phone, brochureUrl }) => {
+export const PropertyDetailInfo: React.FC<PropertyDetailInfoProps> = ({ blocks }) => {
   const items = (blocks ?? []).slice(0, 3)
   const left = items[0] ?? { title: '', body: '' }
   const middle = items[1] ?? { title: '', body: '' }

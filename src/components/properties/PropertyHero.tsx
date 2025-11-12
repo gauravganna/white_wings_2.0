@@ -22,7 +22,7 @@ interface PropertyHeroProps {
  * - Mobile stacks vertically, with sidebar rendered as a simple list
  */
 export const PropertyHero: React.FC<PropertyHeroProps> = ({ item, sections }) => {
-  const media = item.heroImages?.[0] ?? item.image ?? '/src/assets/images/sample-image1.webp'
+  const media = item.heroImages?.[0] ?? item.image ?? '/assets/images/sample-image1.webp'
   const nav = sections ?? [
     { id: 'amenities', label: 'Amenities' },
     { id: 'images', label: 'Images' },

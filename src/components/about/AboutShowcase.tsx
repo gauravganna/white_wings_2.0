@@ -50,9 +50,6 @@ const AboutShowcase: React.FC<AboutShowcaseProps> = ({
     [founder, leaders, achievementsTitle, achievementsItems],
   )
 
-  const goPrev = () => setActive((i) => (i <= 0 ? slides.length - 1 : i - 1))
-  const goNext = () => setActive((i) => (i >= slides.length - 1 ? 0 : i + 1))
-
   return (
     <section aria-label="About showcase" className="bg-[#F8F8F8]">
       {/* Mobile: stacked sections */}

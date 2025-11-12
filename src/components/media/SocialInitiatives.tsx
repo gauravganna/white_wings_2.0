@@ -6,13 +6,13 @@ interface SocialInitiativesProps {
   images?: string[]
 }
 
-// Utility to load images from /src/assets/social-initiatives via Vite glob import
+// Utility to load images from /assets/social-initiatives via Vite glob import
 function useInitiativeImages(explicit?: string[]): string[] {
   if (explicit && explicit.length > 0) {
     return explicit
   }
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const modules: Record<string, any> = import.meta.glob('/src/assets/social-initiatives/*.{png,jpg,jpeg,webp}', {
+  const modules: Record<string, any> = import.meta.glob('/assets/social-initiatives/*.{png,jpg,jpeg,webp}', {
     eager: true,
   }) as any
   const urls = Object.values(modules)

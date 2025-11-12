@@ -8,7 +8,7 @@ export interface NewsletterData {
   description: string;
   input: { placeholder: string; ariaLabel: string };
   cta: { label: string; ariaLabel: string };
-  success: { message: string; ariaLive?: 'polite' | 'assertive' };
+  success: { message: string; ariaLive?: 'polite' | 'assertive' | string };
   errors: { required: string; invalid: string };
 }
 
@@ -25,6 +25,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const resolvedAriaLive: 'polite' | 'assertive' = data.success.ariaLive === 'assertive' ? 'assertive' : 'polite';
 
   const isValid = useMemo(() => emailRegex.test(email.trim()), [email]);
 
@@ -117,7 +118,7 @@ export const FooterNewsletter: React.FC<FooterNewsletterProps> = ({ data, onSubs
                 {/* Success text (aria-live) */}
                 <p
                   id="newsletter-success"
-                  aria-live={data.success.ariaLive ?? 'polite'}
+                  aria-live={resolvedAriaLive}
                   className={cn('mt-2 text-sm text-green-600 text-left', isSuccess ? 'opacity-100' : 'opacity-0')}
                 >
                   {data.success.message}

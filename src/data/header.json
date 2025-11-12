@@ -1,7 +1,7 @@
 {
   "logo": {
     "image": {
-      "src": "/src/assets/images/white-wings-logo.png",
+      "src": "/assets/images/white-wings-logo.png",
       "alt": "White Wings Group",
       "width": 80,
       "height": 40

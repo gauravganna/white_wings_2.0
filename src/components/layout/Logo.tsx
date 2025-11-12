@@ -14,7 +14,7 @@ interface LogoData {
   subtitle?: string;
   tagline?: string;
   // Logo variant
-  variant?: 'full' | 'icon' | 'text';
+  variant?: 'full' | 'icon' | 'text' | string;
 }
 
 interface LogoProps {

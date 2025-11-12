@@ -17,9 +17,9 @@
     "href": "/properties"
   },
   "images": [
-    "/src/assets/images/home/placard_3.jpg",
-    "/src/assets/images/home/placard_2.jpg",
-    "/src/assets/images/home/placard_1.jpg"
+    "/assets/images/home/placard_3.jpg",
+    "/assets/images/home/placard_2.jpg",
+    "/assets/images/home/placard_1.jpg"
   ],
   "stats": [
     {

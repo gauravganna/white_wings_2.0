@@ -22,32 +22,32 @@
   ],
   "amenitiesDefaults": {
     "title": "{data.property.amenities.title}",
-    "image": "/src/assets/images/sample-image1.webp",
+    "image": "/assets/images/sample-image1.webp",
     "items": [
-      { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/plumbing.svg" },
-      { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-      { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-      { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/parking.svg" },
-      { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/jacuzzi.svg" },
-      { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/plumbing.svg" },
-      { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-      { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+      { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/plumbing.svg" },
+      { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+      { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+      { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/parking.svg" },
+      { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/jacuzzi.svg" },
+      { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/plumbing.svg" },
+      { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+      { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
     ]
   },
   "galleryDefaults": {
     "title": "Images",
     "items": [
-      { "src": "/src/assets/images/sample-image1.webp" },
-      { "src": "/src/assets/images/sample-image1.webp" },
-      { "src": "/src/assets/images/sample-image1.webp" },
-      { "src": "/src/assets/images/sample-image1.webp" }
+      { "src": "/assets/images/sample-image1.webp" },
+      { "src": "/assets/images/sample-image1.webp" },
+      { "src": "/assets/images/sample-image1.webp" },
+      { "src": "/assets/images/sample-image1.webp" }
     ]
   },
   "plansDefaults": {
     "title": "{data.property.plans.title}",
     "items": [
-      { "src": "/src/assets/images/sample-image1.webp", "label": "{data.property.plans.items[0].label}" },
-      { "src": "/src/assets/images/sample-image1.webp", "label": "{data.property.plans.items[1].label}" }
+      { "src": "/assets/images/sample-image1.webp", "label": "{data.property.plans.items[0].label}" },
+      { "src": "/assets/images/sample-image1.webp", "label": "{data.property.plans.items[1].label}" }
     ]
   },
   "videoDefaults": {
@@ -64,8 +64,8 @@
       "name": "Torrance",
       "address": "Torrance, G.D Goenka Canal Road, OPP. J9 Commercial Complex, Vesu, Surat, Gujarat 395007",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/majoris.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/majoris.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/torrance",
@@ -85,25 +85,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -115,9 +115,9 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     },
@@ -127,8 +127,8 @@
       "name": "Bella Casa",
       "address": "Bellacasa, Althan Bhimrad, Bhimrad, Surat, Gujarat 395017",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/massimo.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/massimo.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/bella-casa",
@@ -148,25 +148,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -178,8 +178,8 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     },
@@ -189,8 +189,8 @@
       "name": "Flamingo",
       "address": "Flamingo, Althan-Bharthana Road, Surat, Gujarat 395017",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/avatar1.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/flamingo",
@@ -210,25 +210,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -240,8 +240,8 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     },
@@ -251,8 +251,8 @@
       "name": "White Wings Square",
       "address": "VIP Road, Opp. XYZ Mall, Surat, Gujarat 395007",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/avatar1.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/white-wings-square",
@@ -272,25 +272,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -302,8 +302,8 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     },
@@ -313,8 +313,8 @@
       "name": "Business Park",
       "address": "Ring Road, Surat, Gujarat 395002",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/avatar1.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/business-park",
@@ -334,25 +334,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -364,8 +364,8 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     }
@@ -376,8 +376,8 @@
       "name": "Green Meadows",
       "address": "Outer Ring Road, Surat",
       "phone": "+91 98240-99444",
-      "image": "/src/assets/images/sample-image1.webp",
-      "logo": "/src/assets/images/avatar1.png",
+      "image": "/assets/images/sample-image1.webp",
+      "logo": "/assets/images/avatar1.png",
       "brochureUrl": "#",
       "contactUrl": "#",
       "detailUrl": "/property/green-meadows",
@@ -397,25 +397,25 @@
       ],
       "amenities": {
         "title": "Amenities for 52 flats only",
-        "image": "/src/assets/images/sample-image1.webp",
+        "image": "/assets/images/sample-image1.webp",
         "items": [
-          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/src/assets/amenities/dg.svg" },
-          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/src/assets/amenities/parking.svg" },
-          { "label": "Jacuzzi & Steam Bath", "icon": "/src/assets/amenities/jacuzzi.svg" },
-          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/src/assets/amenities/energy.svg" },
-          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/src/assets/amenities/fire.svg" },
-          { "label": "CCTV Cameras In The Common Area", "icon": "/src/assets/amenities/cctv.svg" },
-          { "label": "Open Plumbing For Long Life Of Building", "icon": "/src/assets/amenities/plumbing.svg" },
-          { "label": "Jain Derasar Just Behind The Project", "icon": "/src/assets/amenities/temple.svg" }
+          { "label": "Eco Friendly DG Set Which Reduces Noise Level", "icon": "/assets/amenities/dg.svg" },
+          { "label": "Provision For 2 Car Parking For Each Flat", "icon": "/assets/amenities/parking.svg" },
+          { "label": "Jacuzzi & Steam Bath", "icon": "/assets/amenities/jacuzzi.svg" },
+          { "label": "Energy Efficient Motors & Pumps In Common Area", "icon": "/assets/amenities/energy.svg" },
+          { "label": "Fire Fighting System To Protect Passive And Active Fire", "icon": "/assets/amenities/fire.svg" },
+          { "label": "CCTV Cameras In The Common Area", "icon": "/assets/amenities/cctv.svg" },
+          { "label": "Open Plumbing For Long Life Of Building", "icon": "/assets/amenities/plumbing.svg" },
+          { "label": "Jain Derasar Just Behind The Project", "icon": "/assets/amenities/temple.svg" }
         ]
       },
       "gallery": {
         "title": "Images",
         "items": [
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" },
-          { "src": "/src/assets/images/sample-image1.webp" }
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" },
+          { "src": "/assets/images/sample-image1.webp" }
         ]
       },
       "video": {
@@ -427,8 +427,8 @@
       "plans": {
         "title": "Plans",
         "items": [
-          { "src": "/src/assets/plans/plan1.jpg", "label": "" },
-          { "src": "/src/assets/plans/plan2.jpg", "label": "" }
+          { "src": "/assets/plans/plan1.jpg", "label": "" },
+          { "src": "/assets/plans/plan2.jpg", "label": "" }
         ]
       }
     }

@@ -48,7 +48,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           to={item.href}
           end={item.href === '/'}
           onClick={() => handleItemClick(item)}
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             cn(
               "relative text-sm font-medium transition-colors duration-200",
               "hover:text-ww-blue-600 focus:text-ww-blue-600",
@@ -56,9 +56,8 @@ export const Navigation: React.FC<NavigationProps> = ({
               isActive ? "text-ww-blue-600" : "text-ww-gray-700 hover:text-ww-blue-600"
             )
           }
-          aria-current={({ isActive }) => (isActive ? 'page' : undefined) as any}
         >
-          {({ isActive }) => (
+          {({ isActive }: { isActive: boolean }) => (
             <>
               {item.label}
               {isActive && (

@@ -8,7 +8,7 @@
       "type": "video",
       "title": "Torrance",
       "subtitle": "Drone Video",
-      "thumbnail": "/src/assets/images/sample-image1.webp",
+      "thumbnail": "/assets/images/sample-image1.webp",
       "url": "https://www.youtube.com/watch?v=loqRjunaQ84"
     },
     {
@@ -17,7 +17,7 @@
       "type": "image",
       "title": "Torrance",
       "subtitle": "Drone Video",
-      "thumbnail": "/src/assets/images/sample-image1.webp",
+      "thumbnail": "/assets/images/sample-image1.webp",
       "url": "https://www.instagram.com/reel/DO8CGn2CVLV"
     },
     {
@@ -26,7 +26,7 @@
       "type": "link",
       "title": "Torrance",
       "subtitle": "Drone Video",
-      "thumbnail": "/src/assets/images/sample-thumb.jpg",
+      "thumbnail": "/assets/images/sample-thumb.jpg",
       "url": "https://facebook.com/xxxxx"
     }
   ]

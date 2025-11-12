@@ -6,10 +6,10 @@ This guide explains how to integrate your White Wings logo into the header compo
 
 ### 1. Add Your Logo Files
 
-Place your White Wings logo files in the `src/assets/images/` directory:
+Place your White Wings logo files in the `public/assets/images/` directory:
 
 ```
-src/assets/images/
+public/assets/images/
 ├── white-wings-logo-full.png    # Complete logo with text
 ├── white-wings-icon.png         # Icon/symbol only
 ├── white-wings-logo-white.png   # White version for dark backgrounds
@@ -24,7 +24,7 @@ Edit `src/data/header.json` to use your logo:
 {
   "logo": {
     "image": {
-      "src": "/src/assets/images/white-wings-logo.png",
+      "src": "/assets/images/white-wings-logo.png",
       "alt": "White Wings Group - We Transform Space",
       "width": 120,
       "height": 40

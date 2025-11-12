@@ -6,7 +6,7 @@
       "id": "t1",
       "name": "Tarun Bhagat",
       "role": "Karma Realtors",
-      "avatar": "/src/assets/images/avatar1.png",
+      "avatar": "/assets/images/avatar1.png",
       "quote": "I am proud to share my experience about White Wings...",
       "long": "Very Happy to be a reputed customer of Torrance project of White Wings group, we are having many properties located at different parts of the country but Torrance really gives the pleasure because of the quality of the work done and the support of the team is superb. Easy process and immediate solutions of any queries we had during the plan. Anybody looking for any kind of property either it's residential or commercial can definitely look out for any of the White Wings Projects."
     },
@@ -14,7 +14,7 @@
       "id": "t2",
       "name": "Client Name",
       "role": "Designation",
-      "avatar": "/src/assets/images/avatar-2.png",
+      "avatar": "/assets/images/avatar-2.png",
       "quote": "Review text placeholder.",
       "long": "Longer review for mobile cards."
     }

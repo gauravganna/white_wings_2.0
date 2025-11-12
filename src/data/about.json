@@ -2,8 +2,8 @@
   "hero": {
     "title": "{data.about.hero.title}",
     "subtitle": "{data.about.hero.subtitle}",
-    "image": { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.hero.image.alt}" },
-    "videoSrc": "/src/assets/video.mp4",
+    "image": { "src": "/assets/images/showcase-1.jpg", "alt": "{data.about.hero.image.alt}" },
+    "videoSrc": "/assets/video.mp4",
     "leftText": "WH",
     "rightText": "TE",
     "subheading": "Wings Group",
@@ -17,12 +17,12 @@
     },
     "carousel": {
       "images": [
-        { "src": "/src/assets/images/showcase-1.jpg", "alt": "Project image 1" },
-        { "src": "/src/assets/images/showcase-2.jpg", "alt": "Project image 2" },
-        { "src": "/src/assets/images/showcase-3.png", "alt": "Project image 3" },
-        { "src": "/src/assets/images/showcase-4.png", "alt": "Project image 4" },
-        { "src": "/src/assets/images/jignesh.jpg", "alt": "Founder" },
-        { "src": "/src/assets/images/anupa.jpg", "alt": "Leadership" }
+        { "src": "/assets/images/showcase-1.jpg", "alt": "Project image 1" },
+        { "src": "/assets/images/showcase-2.jpg", "alt": "Project image 2" },
+        { "src": "/assets/images/showcase-3.png", "alt": "Project image 3" },
+        { "src": "/assets/images/showcase-4.png", "alt": "Project image 4" },
+        { "src": "/assets/images/jignesh.jpg", "alt": "Founder" },
+        { "src": "/assets/images/anupa.jpg", "alt": "Leadership" }
       ]
     }
   },
@@ -32,8 +32,8 @@
     "subtitle": "White Wings Torrance is the 1stbuilding in Surat to get Pre-certified Platinum Green Building Certificate from Indian Green Building Council (IGBC)(CII) - IGBC Green Homes Rating System.",
     "description": "White Wings Group is a unique name which has developed land for luxurious and comfortable Residence, Commercial as well as land development in the City Surat and its surroundings. \n\nThe group has experience of more than a decade in the construction area with timely innovations, meticulous planning, constant updating of Methodologies and acquisition of the latest equipment’s and infrastructural techniques. Since its inception, the group has evolved to achieve trust and reputation of rank in the industry with its best-in-class development projects. Thriving on its core values of trust, quality, expertise and integrity, it has several prestigious projects in the Residential, Commercial as well as land development domain to its credit. Professionally managed Real Estate Group, started its activity by the Row House Construction in dazzling city Surat. For the last many years, the group has undertaken and developed some of the prestigious Projects in the Diamond City Surat. The Group is committed to excellent quality and aesthetic constructions at affordable prices comparable to prevailing market trends. \n\nThe Projects meet high safety standards and each project planned, managed and executed with innovative designs, structures, modern and new amenities with timely deliveries of the projects within time schedules. We introduced Flat Slab in living, kitchen and dining area in our Residential projects. The team is proactive in every aspect of customer satisfaction. Group strive to achieve the highest degree of technical excellence while maintaining the best business practices in all the endeavors and put efforts to make the individuals dreams come true.",
     "images": [
-      { "src": "/src/assets/images/showcase-1.jpg", "alt": "{data.about.intro.images[0].alt}" },
-      { "src": "/src/assets/images/showcase-2.jpg", "alt": "{data.about.intro.images[1].alt}" }
+      { "src": "/assets/images/showcase-1.jpg", "alt": "{data.about.intro.images[0].alt}" },
+      { "src": "/assets/images/showcase-2.jpg", "alt": "{data.about.intro.images[1].alt}" }
     ]
   },
   "stats": [
@@ -53,26 +53,26 @@
   "team": {
     "title": "{data.about.team.title}",
     "people": [
-      { "name": "Member One", "role": "Founder", "photo": "/src/assets/images/showcase-2.jpg" },
-      { "name": "Member Two", "role": "Director", "photo": "/src/assets/images/showcase-3.png" },
-      { "name": "Member Three", "role": "Operations", "photo": "/src/assets/images/showcase-4.png" }
+      { "name": "Member One", "role": "Founder", "photo": "/assets/images/showcase-2.jpg" },
+      { "name": "Member Two", "role": "Director", "photo": "/assets/images/showcase-3.png" },
+      { "name": "Member Three", "role": "Operations", "photo": "/assets/images/showcase-4.png" }
     ]
   },
   "why": {
     "title": "Why Choose Us?",
     "description": "At White Wings Group, we don’t just build properties; we create lasting value and thriving communities.",
-    "background": { "src": "/src/assets/images/about-us-background.png", "alt": "{data.about.why.background.alt}" },
+    "background": { "src": "/assets/images/about-us-background.png", "alt": "{data.about.why.background.alt}" },
     "items": [
-      { "title": "Uncompromising Quality", "description": "Precision-driven construction, vetted materials, and proven processes that ensure durability and trust.", "icon": "/src/assets/images/icons/building2.png" },
-      { "title": "Sustainable Excellence", "description": "Environmentally conscious practices with smart planning that stand the test of time.", "icon": "/src/assets/images/icons/money.png" },
-      { "title": "Proficient Services", "description": "End-to-end execution with seamless coordination, timely updates and professional handling.", "icon": "/src/assets/images/icons/building.png" },
-      { "title": "Customer-Centric Approach", "description": "Transparent communication and personalized solutions at every step of the journey.", "icon": "/src/assets/images/icons/customer-centric.png" }
+      { "title": "Uncompromising Quality", "description": "Precision-driven construction, vetted materials, and proven processes that ensure durability and trust.", "icon": "/assets/images/icons/building2.png" },
+      { "title": "Sustainable Excellence", "description": "Environmentally conscious practices with smart planning that stand the test of time.", "icon": "/assets/images/icons/money.png" },
+      { "title": "Proficient Services", "description": "End-to-end execution with seamless coordination, timely updates and professional handling.", "icon": "/assets/images/icons/building.png" },
+      { "title": "Customer-Centric Approach", "description": "Transparent communication and personalized solutions at every step of the journey.", "icon": "/assets/images/icons/customer-centric.png" }
     ]
   },
   "founder": {
     "title": "About Our Founder",
     "name": "Mr. Jignesh Amin",
-    "image": { "src": "/src/assets/images/jignesh.jpg", "alt": "{data.about.founder.image.alt}" },
+    "image": { "src": "/assets/images/jignesh.jpg", "alt": "{data.about.founder.image.alt}" },
     "visionaryTitle": "Visionary Leadership",
     "visionaryText": "As the Founder of White Wings Group, Mr. Amin is recognized for his strong vision and business foresight. He is known for selecting strategic project locations with high potential for growth, affordability, and market appeal.",
     "socials": [
@@ -87,14 +87,14 @@
       {
         "name": "Mr. Jignesh Amin",
         "title": "",
-        "image": { "src": "/src/assets/images/jignesh.jpg", "alt": "{data.about.leadership.members[0].image.alt}" },
+        "image": { "src": "/assets/images/jignesh.jpg", "alt": "{data.about.leadership.members[0].image.alt}" },
         "description": "Mr. Jignesh Amin born in 3rd Feb 1973 is a Chartered Accountant. He is a Leuva Patidar from Mehsana (Patan), North Gujarat. He graduated from Mumbai University and completed his chartered accountancy from ICAI in 1997. He is a young and enthusiastic entrepreneur engaged in real estate, construction, and other ventures. With strong vision, he has identified project sites with great potential for growth, affordability and market appeal. He has led several projects at Vesu, Bhimrad, Udhna Magdalla Road, Navsari & Ubharat that have received an overwhelming response.",
         "imageLeft": true
       },
       {
         "name": "Mrs. Anupa Amin",
         "title": "",
-        "image": { "src": "/src/assets/images/anupa.jpg", "alt": "{data.about.leadership.members[1].image.alt}" },
+        "image": { "src": "/assets/images/anupa.jpg", "alt": "{data.about.leadership.members[1].image.alt}" },
         "description": "Born on 23rd August 1978, Mrs. Anupa Amin is a dynamic entrepreneur with more than 10 years of experience in the development and construction of residential, commercial and land development projects. Holding a B.Sc. in Microbiology and Biotechnology along with D.M.L.T., she brings strong management expertise and effective communication skills.",
         "imageLeft": false
       }
@@ -103,9 +103,9 @@
   "certificates": {
     "title": "Certificate and Awards",
     "images": [
-      "/src/assets/images/certificates/certificate1.jpg",
-      "/src/assets/images/certificates/certificate2.jpg",
-      "/src/assets/images/certificates/certificate3.jpg"
+      "/assets/images/certificates/certificate1.jpg",
+      "/assets/images/certificates/certificate2.jpg",
+      "/assets/images/certificates/certificate3.jpg"
     ]
   },
   "achievements": {
@@ -114,22 +114,22 @@
       {
         "title": "ICA – The Institute of Chartered Accountants of India – Batch 1997",
         "description": "",
-        "icon": "/src/assets/images/icons/ica.jpg"
+        "icon": "/assets/images/icons/ica.jpg"
       },
       {
         "title": "CREDAI – Confederation of Real Estate Developers Associations of India",
         "description": "Committee Member • CREDAI National • JT. Secretary • Vesu Zone Co-ordination CREDAI",
-        "icon": "/src/assets/images/icons/credai.png"
+        "icon": "/assets/images/icons/credai.png"
       },
       {
         "title": "TiE – The Indus Entrepreneurs – Charter Member",
         "description": "",
-        "icon": "/src/assets/images/icons/tie.jpg"
+        "icon": "/assets/images/icons/tie.jpg"
       },
       {
         "title": "IGBC – The Indian Green Building Council [CII]",
         "description": "",
-        "icon": "/src/assets/images/icons/icea.png"
+        "icon": "/assets/images/icons/icea.png"
       }
     ]
   }

@@ -46,7 +46,7 @@ const CareerPage: React.FC = () => {
           {/* Left column: show only on desktop, split equally: image on top, map below */}
           <div className="hidden md:flex flex-col gap-6 md:min-h-[600px]">
             <div className="overflow-hidden rounded-lg border border-ww-gray-200 flex-1">
-              <img src={"/src/assets/images/career_page.jpg"} alt="Team" className="w-full h-full object-cover" />
+              <img src={"/assets/images/career_page.jpg"} alt="Team" className="w-full h-full object-cover" />
             </div>
             <div className="w-full overflow-hidden rounded-lg border border-ww-gray-200 flex-1">
               <div className="relative w-full h-full">

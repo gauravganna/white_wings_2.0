@@ -4,7 +4,7 @@ import React from 'react';
 export interface SocialItem {
   id: string;
   platform: 'youtube' | 'instagram' | 'facebook' | string;
-  type: 'video' | 'image' | 'link';
+  type: 'video' | 'image' | 'link' | string;
   title: string;
   subtitle?: string;
   thumbnail: string;

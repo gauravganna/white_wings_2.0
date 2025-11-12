@@ -3,9 +3,9 @@
   "text": "With over 27 years in Surat’s real estate market, White Wings Group has grown from building row houses to delivering landmark residential, commercial, and land development projects. Every project reflects our ability to balance aesthetics, safety, and timely delivery.",
   "cta": { "label": "About Us →", "href": "#" },
   "images": [
-    "/src/assets/images/home/showcase-1.jpg",
-    "/src/assets/images/home/showcase-2.jpg",
-    "/src/assets/images/home/showcase-3.png",
-    "/src/assets/images/home/showcase-4.png"
+    "/assets/images/home/showcase-1.jpg",
+    "/assets/images/home/showcase-2.jpg",
+    "/assets/images/home/showcase-3.png",
+    "/assets/images/home/showcase-4.png"
   ]
 }

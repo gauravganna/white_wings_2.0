@@ -27,13 +27,13 @@ const MediaLandingPage: React.FC = () => {
             highlightTitle: landing.hero?.highlight?.title ?? '',
             highlightSubtitle: landing.hero?.highlight?.subtitle ?? '',
             highlightSummary: landing.hero?.highlight?.summary ?? '',
-            media: { src: landing.hero?.media?.src ?? '/src/assets/images/showcase-1.jpg', alt: landing.hero?.media?.alt },
+              media: { src: landing.hero?.media?.src ?? '/assets/images/showcase-1.jpg', alt: landing.hero?.media?.alt },
             gridImages: Array.isArray(landing.hero?.gridImages)
               ? landing.hero.gridImages
               : [
-                  { src: '/src/assets/images/showcase-1.jpg', alt: '{data.media.landing.hero.gridImages[0].alt}' },
-                  { src: '/src/assets/images/showcase-2.jpg', alt: '{data.media.landing.hero.gridImages[1].alt}' },
-                  { src: '/src/assets/images/showcase-3.png', alt: '{data.media.landing.hero.gridImages[2].alt}' }
+                  { src: '/assets/images/showcase-1.jpg', alt: '{data.media.landing.hero.gridImages[0].alt}' },
+                  { src: '/assets/images/showcase-2.jpg', alt: '{data.media.landing.hero.gridImages[1].alt}' },
+                  { src: '/assets/images/showcase-3.png', alt: '{data.media.landing.hero.gridImages[2].alt}' }
                 ],
           }}
         />
