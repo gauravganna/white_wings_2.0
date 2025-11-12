@@ -6,6 +6,15 @@
     "videoSrc": "/src/assets/video.mp4",
     "leftText": "WH",
     "rightText": "TE",
+    "subheading": "Wings Group",
+    "mission": {
+      "title": "Mission",
+      "description": "While technology is advancing beyond Earth, our focus is on enhancing living standards by creating sustainable, high-quality residential and commercial spaces that cater to the evolving needs of urban life."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To develop cost-effective, well-designed and comfortable spaces with modern hi-tech amenities for residential and commercial projects, setting new benchmarks in Surat’s real estate industry."
+    },
     "carousel": {
       "images": [
         { "src": "/src/assets/images/showcase-1.jpg", "alt": "Project image 1" },

@@ -22,6 +22,8 @@ const AboutPage: React.FC = () => {
           rightText={(about as any).hero?.rightText}
           carouselImages={((about as any).hero?.carousel?.images ?? []) as any}
           subheading={(about as any).hero?.subheading}
+          mission={(about as any).hero?.mission}
+          vision={(about as any).hero?.vision}
         />
 
         {/* Intro */}
