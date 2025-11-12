@@ -14,7 +14,7 @@ export const PropertiesBlurb: React.FC<PropertiesBlurbProps> = ({ type }) => {
   const body: string = content.body ?? '{data.properties.blurbs.' + type + '.body}'
 
   return (
-    <section aria-labelledby="properties-blurb-title" className="bg-white">
+    <section aria-labelledby="properties-blurb-title" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-4 py-10 md:py-14">
         <h3 id="properties-blurb-title" className="text-2xl md:text-3xl font-medium text-ww-gray-800 mb-4">
           {title}

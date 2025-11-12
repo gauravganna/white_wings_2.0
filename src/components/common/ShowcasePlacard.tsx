@@ -4,7 +4,7 @@ import React from 'react';
 
 export const ShowcasePlacard: React.FC = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-[#F8F8F8]">
       <div className="container mx-auto px-4 py-10 md:py-14 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left copy */}
         <div className="text-center md:text-left">

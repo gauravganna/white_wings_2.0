@@ -117,7 +117,7 @@ const AboutHeroAnimated: React.FC<AboutHeroAnimatedProps> = ({
 
   return (
     <>
-    <section className="hidden md:block relative w-full h-[calc(100vh-90px)] bg-white overflow-hidden" aria-label="About hero">
+    <section className="hidden md:block relative w-full h-[calc(100vh-90px)] bg-[#F8F8F8] overflow-hidden" aria-label="About hero">
       {/* Group container moves both WHITE and the subheading together */}
       <motion.div
         className="absolute inset-0 z-10"

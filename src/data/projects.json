@@ -1,9 +1,10 @@
 {
   "title": "Projects",
   "logos": [
-    { "src": "/src/assets/images/brands/brooklyn.png", "alt": "Brooklyn", "href": "#" },
-    { "src": "/src/assets/images/brands/orleans.png", "alt": "Orleans", "href": "#" },
-    { "src": "/src/assets/images/brands/ovalleaf.png", "alt": "Oval Leaf", "href": "#" },
-    { "src": "/src/assets/images/brands/massimo.png", "alt": "Massimo", "href": "#" }
+    { "src": "/src/assets/images/home/brands/brooklyn.png", "alt": "Brooklyn", "href": "#" },
+    { "src": "/src/assets/images/home/brands/orleans.png", "alt": "Orleans", "href": "#" },
+    { "src": "/src/assets/images/home/brands/ovalleaf.png", "alt": "Oval Leaf", "href": "#" },
+    { "src": "/src/assets/images/home/brands/massimo.png", "alt": "Massimo", "href": "#" },
+    { "src": "/src/assets/images/home/brands/valentino.png", "alt": "Valentino", "href": "#" }
   ]
 }

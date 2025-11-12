@@ -4,9 +4,9 @@
   "cta": { "label": "Schedule a call", "href": "/contact" },
   "carouselImage": "/src/assets/images/hero-carousel.png",
   "gridImages": [
-    "/src/assets/images/showcase-1.jpg",
-    "/src/assets/images/showcase-2.jpg",
-    "/src/assets/images/showcase-3.png"
+    "/src/assets/images/home/homepage_1.jpg",
+    "/src/assets/images/home/homepage_2.jpg",
+    "/src/assets/images/home/homepage_3.jpg"
   ]  
 }
 

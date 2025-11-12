@@ -4,10 +4,10 @@ import React from 'react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section aria-label="Homepage hero" className="bg-white">
+    <section aria-label="Homepage hero" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-4 py-8 md:py-16 space-y-10">
         {/* Top: Content left, angled marquee right (desktop); mobile shows marquee top */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden px-8 bg-white">
           {/* Mobile: marquee on top (single image, horizontal scroll animation) */}
           <div className="md:hidden order-1">
             <div className="mx-auto w-[375px] h-[280px] overflow-hidden border-y border-ww-gray-300">

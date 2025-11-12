@@ -25,7 +25,7 @@ export const AboutCertificates: React.FC<AboutCertificatesProps> = ({
   if (!slides.length) return null
 
   return (
-    <section aria-labelledby="certificates-heading" className="bg-white">
+    <section aria-labelledby="certificates-heading" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-2 pt-12 md:pb-12 md:pt-16">
         <h2 id="certificates-heading" className="text-4xl text-ww-gray-900 mb-6 md:mb-8">
           {title}

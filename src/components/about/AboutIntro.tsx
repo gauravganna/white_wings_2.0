@@ -20,7 +20,7 @@ export const AboutIntro: React.FC<AboutIntroProps> = ({ overline, title, subtitl
       )
     : []
   return (
-    <section aria-labelledby="about-intro-heading" className="bg-white">
+    <section aria-labelledby="about-intro-heading" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-4 pt-4 md:pt-6">
         {overline && <p className="text-sm uppercase tracking-wider text-ww-gray-600">{overline}</p>}
         {title && <h2 id="about-intro-heading" className="text-2xl md:text-3xl uppercase text-ww-gray-900">{title}</h2>}

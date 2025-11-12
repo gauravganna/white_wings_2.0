@@ -14,7 +14,7 @@ export const PropertyImages: React.FC<PropertyImagesProps> = ({ title = 'Images'
   const items = (images ?? []).slice(0, 4)
 
   return (
-    <section id="images" aria-labelledby="images-title" className="bg-white">
+    <section id="images" aria-labelledby="images-title" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-2 md:px-4 py-0 md:pt-6">
         <h2 id="images-title" className="text-2xl md:text-3xl font-semibold text-ww-gray-900 mb-4 md:mb-6">
           {title}

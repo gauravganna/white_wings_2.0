@@ -54,7 +54,7 @@ const AboutShowcase: React.FC<AboutShowcaseProps> = ({
   const goNext = () => setActive((i) => (i >= slides.length - 1 ? 0 : i + 1))
 
   return (
-    <section aria-label="About showcase" className="bg-white">
+    <section aria-label="About showcase" className="bg-[#F8F8F8]">
       {/* Mobile: stacked sections */}
       <div className="md:hidden">
         {slides.map((s, idx) => (
@@ -68,7 +68,7 @@ const AboutShowcase: React.FC<AboutShowcaseProps> = ({
       <div className="hidden md:block">
         <div className="relative">{slides[active].render()}</div>
         <div className="container mx-auto px-4 pt-8 flex items-center justify-between">
-          <div className="w-full flex justify-center gap-2">
+          <div className="w-full flex justify-center gap-2 bg-[#F8F8F8]">
             {slides.map((_, i) => (
               <button
                 key={i}

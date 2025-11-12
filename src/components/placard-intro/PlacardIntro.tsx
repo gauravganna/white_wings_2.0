@@ -15,14 +15,14 @@ export const PlacardIntro: React.FC = () => {
                 <img 
                   src={data.images[0]} 
                   alt="White Wings project 1" 
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-fill"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-[240px]">
                 <img 
                   src={data.images[1]} 
                   alt="White Wings project 2" 
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-fill"
                 />
               </div>
               {/* Bottom row: one full-width image */}
@@ -30,7 +30,7 @@ export const PlacardIntro: React.FC = () => {
                 <img 
                   src={data.images[2]} 
                   alt="White Wings project 3" 
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-fill"
                 />
               </div>
             </div>

@@ -52,7 +52,7 @@ export const AboutWhyChooseUs: React.FC<AboutWhyChooseUsProps> = ({
   }
 
   return (
-    <section aria-labelledby="why-choose-us-heading" className="bg-white relative">
+    <section aria-labelledby="why-choose-us-heading" className="bg-[#F8F8F8] relative">
       <div className="container mx-auto mt-6 md:mt-12 px-4 py-10 md:py-14 relative">
         {/* Desktop background image occupying left 75% */}
         {background?.src && (

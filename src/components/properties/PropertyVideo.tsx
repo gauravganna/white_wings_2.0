@@ -32,7 +32,7 @@ export const PropertyVideo: React.FC<PropertyVideoProps> = ({
   }
 
   return (
-    <section id="videos" aria-labelledby="videos-heading" className="bg-white">
+    <section id="videos" aria-labelledby="videos-heading" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-2 md:px-4 py-0 md:pt-6">
         <h2 id="videos-heading" className="text-2xl md:text-3xl font-semibold text-ww-gray-900 mb-6">
           {heading}

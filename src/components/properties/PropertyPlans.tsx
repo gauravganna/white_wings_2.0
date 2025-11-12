@@ -19,7 +19,7 @@ export const PropertyPlans: React.FC<PropertyPlansProps> = ({ title = 'Plans', i
   }
 
   return (
-    <section id="plans" aria-labelledby="plans-title" className="bg-white">
+    <section id="plans" aria-labelledby="plans-title" className="bg-[#F8F8F8]">
       <div className="container mx-auto px-2 md:px-4 py-0 md:pt-6">
         <h2 id="plans-title" className="text-2xl md:text-3xl font-semibold text-ww-gray-900 mb-4 md:mb-6">
           {title}

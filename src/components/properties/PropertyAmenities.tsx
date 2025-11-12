@@ -43,7 +43,7 @@ export const PropertyAmenities: React.FC<PropertyAmenitiesProps> = ({ title = 'A
             <h3 className="text-xl md:text-2xl uppercase text-ww-gray-700">{title}</h3>
             <ul className="grid grid-cols-2 gap-4 md:gap-6" role="list">
               {items.map((a, idx) => (
-                <li key={idx} className="flex flex-col items-center text-center justify-center rounded-md bg-[#CADCF0] md:bg-ww-blue-50/40 p-6 md:p-8">
+                <li key={idx} className="flex flex-col items-center text-center justify-center rounded-md bg-[#CADCF0] md:bg-[#f7f2fe] p-6 md:p-8">
                   {a.icon ? (
                     <img src={a.icon} alt={a.alt ?? a.label} className="h-10 w-10 md:h-12 md:w-12 object-contain" />
                   ) : (

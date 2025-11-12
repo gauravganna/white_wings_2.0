@@ -33,7 +33,7 @@ export const PropertyHero: React.FC<PropertyHeroProps> = ({ item, sections }) =>
   return (
     <section
       aria-labelledby="property-hero-title"
-      className="px-0 md:px-4 bg-[#F4F2FE] md:bg-[linear-gradient(to_bottom,_white_0%,_white_20%,_#F4F2FE_20%,_#F4F2FE_100%)]"
+      className="px-0 md:px-4 bg-[#f7f2fe] md:bg-[linear-gradient(to_bottom,_white_0%,_white_20%,_#f7f2fe_20%,_#f7f2fe_100%)]"
     >
       {/* Top bar */}
       <div className="">
